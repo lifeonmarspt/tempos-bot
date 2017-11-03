@@ -12,10 +12,11 @@
 		AE09CB2D1FA3794C00D3BFB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE09CB2B1FA3794C00D3BFB1 /* MainMenu.xib */; };
 		AE09CB391FA3794C00D3BFB1 /* TemposBotMenubarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB381FA3794C00D3BFB1 /* TemposBotMenubarTests.swift */; };
 		AE09CB441FA3794C00D3BFB1 /* TemposBotMenubarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB431FA3794C00D3BFB1 /* TemposBotMenubarUITests.swift */; };
-		AE09CB521FA37FD400D3BFB1 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB511FA37FD400D3BFB1 /* StatusMenuController.swift */; };
-		AE09CB541FA3851B00D3BFB1 /* TemposBotAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB531FA3851B00D3BFB1 /* TemposBotAPI.swift */; };
-		AE09CB571FA38AA700D3BFB1 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB551FA38AA700D3BFB1 /* PreferencesWindow.swift */; };
+		AE09CB521FA37FD400D3BFB1 /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB511FA37FD400D3BFB1 /* MainMenuController.swift */; };
+		AE09CB571FA38AA700D3BFB1 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB551FA38AA700D3BFB1 /* PreferencesWindowController.swift */; };
 		AE09CB581FA38AA700D3BFB1 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */; };
+		AE1591EC1FACE11A0067C09D /* Tempos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1591EB1FACE11A0067C09D /* Tempos.swift */; };
+		AE74B2891FACC1830055F2DE /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE74B2881FACC1830055F2DE /* Git.swift */; };
 		AE8539631FAC7F680037A857 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8539621FAC7F680037A857 /* TextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -49,10 +50,11 @@
 		AE09CB3F1FA3794C00D3BFB1 /* TemposBotMenubarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemposBotMenubarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE09CB431FA3794C00D3BFB1 /* TemposBotMenubarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemposBotMenubarUITests.swift; sourceTree = "<group>"; };
 		AE09CB451FA3794C00D3BFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE09CB511FA37FD400D3BFB1 /* StatusMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
-		AE09CB531FA3851B00D3BFB1 /* TemposBotAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemposBotAPI.swift; sourceTree = "<group>"; };
-		AE09CB551FA38AA700D3BFB1 /* PreferencesWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		AE09CB511FA37FD400D3BFB1 /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		AE09CB551FA38AA700D3BFB1 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		AE1591EB1FACE11A0067C09D /* Tempos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tempos.swift; sourceTree = "<group>"; };
+		AE74B2881FACC1830055F2DE /* Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		AE8539621FAC7F680037A857 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,16 +106,16 @@
 		AE09CB261FA3794C00D3BFB1 /* TemposBotMenubar */ = {
 			isa = PBXGroup;
 			children = (
+				AE74B2871FACC1740055F2DE /* Lib */,
 				AE8539611FAC7F360037A857 /* UI */,
 				AE09CB271FA3794C00D3BFB1 /* AppDelegate.swift */,
-				AE09CB291FA3794C00D3BFB1 /* Assets.xcassets */,
 				AE09CB2B1FA3794C00D3BFB1 /* MainMenu.xib */,
+				AE09CB511FA37FD400D3BFB1 /* MainMenuController.swift */,
+				AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */,
+				AE09CB551FA38AA700D3BFB1 /* PreferencesWindowController.swift */,
+				AE09CB291FA3794C00D3BFB1 /* Assets.xcassets */,
 				AE09CB2E1FA3794C00D3BFB1 /* Info.plist */,
 				AE09CB2F1FA3794C00D3BFB1 /* TemposBotMenubar.entitlements */,
-				AE09CB511FA37FD400D3BFB1 /* StatusMenuController.swift */,
-				AE09CB531FA3851B00D3BFB1 /* TemposBotAPI.swift */,
-				AE09CB551FA38AA700D3BFB1 /* PreferencesWindow.swift */,
-				AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */,
 			);
 			path = TemposBotMenubar;
 			sourceTree = "<group>";
@@ -134,6 +136,15 @@
 				AE09CB451FA3794C00D3BFB1 /* Info.plist */,
 			);
 			path = TemposBotMenubarUITests;
+			sourceTree = "<group>";
+		};
+		AE74B2871FACC1740055F2DE /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				AE74B2881FACC1830055F2DE /* Git.swift */,
+				AE1591EB1FACE11A0067C09D /* Tempos.swift */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		AE8539611FAC7F360037A857 /* UI */ = {
@@ -278,11 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE09CB571FA38AA700D3BFB1 /* PreferencesWindow.swift in Sources */,
-				AE09CB541FA3851B00D3BFB1 /* TemposBotAPI.swift in Sources */,
-				AE09CB521FA37FD400D3BFB1 /* StatusMenuController.swift in Sources */,
+				AE09CB571FA38AA700D3BFB1 /* PreferencesWindowController.swift in Sources */,
+				AE09CB521FA37FD400D3BFB1 /* MainMenuController.swift in Sources */,
 				AE8539631FAC7F680037A857 /* TextField.swift in Sources */,
 				AE09CB281FA3794C00D3BFB1 /* AppDelegate.swift in Sources */,
+				AE74B2891FACC1830055F2DE /* Git.swift in Sources */,
+				AE1591EC1FACE11A0067C09D /* Tempos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

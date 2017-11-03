@@ -14,17 +14,19 @@
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TemposBotMenubar" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="SgW-QN-cNc" userLabel="StatusMenuController" customClass="StatusMenuController" customModule="TemposBotMenubar" customModuleProvider="target">
+        <customObject id="SgW-QN-cNc" userLabel="StatusMenuController" customClass="MainMenuController" customModule="TemposBotMenubar" customModuleProvider="target">
             <connections>
+                <outlet property="currentUser" destination="Qz8-Iv-Guh" id="9T9-dC-zj7"/>
                 <outlet property="statusMenu" destination="maa-EJ-mQB" id="UEg-J6-fWh"/>
             </connections>
         </customObject>
         <menu id="maa-EJ-mQB">
             <items>
-                <menuItem title="TEMPOS BOT" id="PNR-gM-dIX">
+                <menuItem enabled="NO" id="Qz8-Iv-Guh" userLabel="Username">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem isSeparatorItem="YES" id="fsy-C4-F9a"/>
+                <menuItem isSeparatorItem="YES" id="xDN-nW-FgJ"/>
+                <menuItem isSeparatorItem="YES" id="6aL-OR-ZNK"/>
                 <menuItem title="Preferences" id="Y53-nc-cjB">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
@@ -38,7 +40,7 @@
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-59.5" y="113.5"/>
+            <point key="canvasLocation" x="-59.5" y="123.5"/>
         </menu>
     </objects>
 </document>
