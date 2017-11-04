@@ -16,8 +16,10 @@
 		AE09CB571FA38AA700D3BFB1 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB551FA38AA700D3BFB1 /* PreferencesWindowController.swift */; };
 		AE09CB581FA38AA700D3BFB1 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */; };
 		AE1591EC1FACE11A0067C09D /* Tempos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1591EB1FACE11A0067C09D /* Tempos.swift */; };
+		AE23C5BF1FAD41A700EF827F /* ProjectListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23C5BD1FAD41A700EF827F /* ProjectListController.swift */; };
 		AE74B2891FACC1830055F2DE /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE74B2881FACC1830055F2DE /* Git.swift */; };
 		AE8539631FAC7F680037A857 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8539621FAC7F680037A857 /* TextField.swift */; };
+		AED33A631FAE54D600E9E005 /* CommandLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED33A621FAE54D600E9E005 /* CommandLineController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +56,10 @@
 		AE09CB551FA38AA700D3BFB1 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		AE1591EB1FACE11A0067C09D /* Tempos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tempos.swift; sourceTree = "<group>"; };
+		AE23C5BD1FAD41A700EF827F /* ProjectListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListController.swift; sourceTree = "<group>"; };
 		AE74B2881FACC1830055F2DE /* Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		AE8539621FAC7F680037A857 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		AED33A621FAE54D600E9E005 /* CommandLineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 			isa = PBXGroup;
 			children = (
 				AE8539621FAC7F680037A857 /* TextField.swift */,
+				AE23C5BD1FAD41A700EF827F /* ProjectListController.swift */,
+				AED33A621FAE54D600E9E005 /* CommandLineController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -290,10 +296,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE09CB571FA38AA700D3BFB1 /* PreferencesWindowController.swift in Sources */,
+				AED33A631FAE54D600E9E005 /* CommandLineController.swift in Sources */,
 				AE09CB521FA37FD400D3BFB1 /* MainMenuController.swift in Sources */,
 				AE8539631FAC7F680037A857 /* TextField.swift in Sources */,
 				AE09CB281FA3794C00D3BFB1 /* AppDelegate.swift in Sources */,
 				AE74B2891FACC1830055F2DE /* Git.swift in Sources */,
+				AE23C5BF1FAD41A700EF827F /* ProjectListController.swift in Sources */,
 				AE1591EC1FACE11A0067C09D /* Tempos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

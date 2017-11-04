@@ -16,7 +16,8 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <customObject id="SgW-QN-cNc" userLabel="StatusMenuController" customClass="MainMenuController" customModule="TemposBotMenubar" customModuleProvider="target">
             <connections>
-                <outlet property="currentUser" destination="Qz8-Iv-Guh" id="9T9-dC-zj7"/>
+                <outlet property="currentUserItem" destination="Qz8-Iv-Guh" id="cqs-Dv-upd"/>
+                <outlet property="projectsListItem" destination="CFA-A8-qSV" id="vug-6X-eD0"/>
                 <outlet property="statusMenu" destination="maa-EJ-mQB" id="UEg-J6-fWh"/>
             </connections>
         </customObject>
@@ -26,15 +27,16 @@
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="xDN-nW-FgJ"/>
-                <menuItem isSeparatorItem="YES" id="6aL-OR-ZNK"/>
-                <menuItem title="Preferences" id="Y53-nc-cjB">
+                <menuItem id="CFA-A8-qSV" userLabel="Projects">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="6aL-OR-ZNK"/>
+                <menuItem title="Preferences" keyEquivalent="," id="Y53-nc-cjB">
                     <connections>
                         <action selector="preferencesClickedWithSender:" target="SgW-QN-cNc" id="Gq8-dU-B9X"/>
                     </connections>
                 </menuItem>
-                <menuItem title="Quit" id="4pA-Wt-FfY">
-                    <modifierMask key="keyEquivalentModifierMask"/>
+                <menuItem title="Quit" keyEquivalent="q" id="4pA-Wt-FfY">
                     <connections>
                         <action selector="quitClickedWithSender:" target="SgW-QN-cNc" id="2De-co-1Hb"/>
                     </connections>

@@ -25,35 +25,35 @@ class Git {
   static func commiter() -> String {
     let task = prepareGitTask()
     task.arguments = ["config", "user.email"]
-    
+
     let pipe = Pipe()
     task.standardOutput = pipe
     task.launch()
-    
+
     let handle = pipe.fileHandleForReading
     let data = handle.readDataToEndOfFile()
-    
+
     task.waitUntilExit()
 
     return String(data: data, encoding: String.Encoding.utf8)!
   }
-  
+
   static func pull() {
   }
-  
+
   static func push() {
   }
-  
+
   static func commit(message: String) {
-    
+
   }
-  
+
   private static func prepareGitTask() -> Process {
     let task = Process()
     task.launchPath = "/usr/bin/git"
     task.currentDirectoryPath = UserDefaults.standard.string(forKey: "repo")!
-    
+
     return task
   }
-  
+
 }

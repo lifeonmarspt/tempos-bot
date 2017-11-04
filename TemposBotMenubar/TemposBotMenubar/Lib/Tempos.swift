@@ -14,14 +14,28 @@ class Tempos {
     let fileManager = FileManager.default
     let defaultRepo = UserDefaults.standard.string(forKey: "repo")!
 
-    let regex = try! NSRegularExpression(pattern: "\\w+\\/\\w+", options: .caseInsensitive)
-    
-    var files = fileManager.subpaths(atPath: defaultRepo)!
-    files = files.filter {
+    let regex = try! NSRegularExpression(
+      pattern: "^[-\\w]+\\/[-\\w]+$",
+      options: .caseInsensitive
+    )
+
+    var paths = fileManager.subpaths(atPath: defaultRepo)!
+
+    paths = paths.filter {
       !$0.starts(with: ".git") &&
-      regex.numberOfMatches(in: $0, range: NSMakeRange(0, $0.utf16.count)) == 1
+      regex.numberOfMatches(in: $0, range: NSMakeRange(0, $0.utf8.count)) == 1
     }
-    
-    return files
+
+    return paths
+  }
+
+  static func isValidCommand(command: String) -> Bool {
+    let regex = try! NSRegularExpression(
+      pattern: "^(add|remove)\\s+\\d+(h|h\\d+(m|min)|m|min)$",
+      options: .caseInsensitive
+    )
+
+    print("Tempos.isValidCommand(\(command))")
+    return regex.numberOfMatches(in: command, range: NSMakeRange(0, command.utf8.count)) == 1
   }
 }

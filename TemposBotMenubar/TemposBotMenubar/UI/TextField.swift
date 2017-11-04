@@ -9,14 +9,14 @@
 import Cocoa
 
 class TextField: NSTextField {
-  
+
   private let commandKey = NSEvent.ModifierFlags.command.rawValue
   private let commandShiftKey = NSEvent.ModifierFlags.command.rawValue | NSEvent.ModifierFlags.shift.rawValue
-  
+
   override func draw(_ dirtyRect: NSRect) {
     super.draw(dirtyRect)
   }
-  
+
   override func performKeyEquivalent(with event: NSEvent) -> Bool {
     if event.type == NSEvent.EventType.keyDown {
       if (event.modifierFlags.rawValue & NSEvent.ModifierFlags.deviceIndependentFlagsMask.rawValue) == commandKey {
@@ -36,7 +36,7 @@ class TextField: NSTextField {
         }
       }
     }
-    
+
     return super.performKeyEquivalent(with: event)
   }
 }
