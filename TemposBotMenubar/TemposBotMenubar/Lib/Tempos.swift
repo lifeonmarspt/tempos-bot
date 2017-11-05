@@ -13,7 +13,7 @@ class Tempos {
   static func projects() -> Array<String> {
     let fileManager = FileManager.default
     let defaultRepo = UserDefaults.standard.string(forKey: "repo")
-    
+
     if defaultRepo == nil { return [] }
 
     let regex = try! NSRegularExpression(
@@ -37,7 +37,6 @@ class Tempos {
       options: .caseInsensitive
     )
 
-    print("Tempos.isValidCommand(\(command))")
     return regex.numberOfMatches(in: command, range: NSMakeRange(0, command.utf8.count)) == 1
   }
 
@@ -63,30 +62,88 @@ class Tempos {
       return status!.contains("stop") ? "stop" : "start"
     }
     catch {
-      let file = FileManager.default.createFile(atPath: path, contents: nil)
-
-      print("created file \(file)")
+      FileManager.default.createFile(atPath: path, contents: nil)
       return "stop"
     }
   }
 
+  static func report(_ project: String) -> String {
+    let file = FileHandle(forReadingAtPath: projectPath(project))
+    let data = file?.readDataToEndOfFile()
+
+    if data == nil { return "" }
+
+    let commands = String(data: data!, encoding: .utf8)!
+    if commands.isEmpty { return "" }
+
+    var seconds = commands
+      .split(separator: "\n")
+      .filter{
+        if $0.starts(with: "#") { return false }
+
+        let timestamp = Double($0.split(separator: " ")[0])!
+        let date = Date(timeIntervalSince1970: timestamp)
+
+        return NSCalendar.current.isDateInToday(date)
+      }
+      .reduce(0, { total, command in
+        if command.contains("start") || command.contains("stop") {
+          let timestamp = Int(command.split(separator: " ")[0])!
+
+          return timestamp - total
+        }
+
+        return total
+      })
+
+    // if seconds is longer than a day, then the last command was a start
+    // and the current value is somewhere around today, so we subtract it
+    // from the current date to create a soft "stop" command
+    if seconds > 86400 {
+      seconds = Int(Date().timeIntervalSince1970) - seconds
+    }
+
+    let spentDate = Date(timeIntervalSince1970: Double(seconds))
+    let formatter = DateFormatter()
+    formatter.dateFormat = "HH:mm"
+    formatter.timeZone = TimeZone(abbreviation: "UTC")
+
+    return " Today: \(formatter.string(from: spentDate))"
+  }
+
   static func start(_ project: String) {
     if status(project) == "start" { return }
-    writeCommand(project, command: "start")
+
+    Git.pull()
+
+    let log = writeCommand(project, command: "start")
+
+    Git.add(path: projectPath(project))
+    Git.commit(message: log)
+    Git.push()
   }
 
   static func stop(_ project: String) {
     if status(project) == "stop" { return }
-    writeCommand(project, command: "stop")
+
+    Git.pull()
+
+    let log = writeCommand(project, command: "stop")
+
+    Git.add(path: projectPath(project))
+    Git.commit(message: log)
+    Git.push()
   }
 
-  private static func writeCommand(_ project: String, command: String) {
+  private static func writeCommand(_ project: String, command: String) -> String {
     let file = FileHandle(forWritingAtPath: projectPath(project))
     let log = "\(Int(NSDate().timeIntervalSince1970)) \(timezone()) \(command)\n"
 
     file?.seekToEndOfFile()
     file?.write(log.data(using: .utf8)!)
     file?.closeFile()
+
+    return log
   }
 
   private static func projectPath(_ project: String) -> String {

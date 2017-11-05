@@ -12,12 +12,15 @@ import Cocoa
 class ProjectListController: NSViewController {
 
   let TABLE_WIDTH = 400
-  let ROW_HEIGHT = 30
+  let ROW_HEIGHT = 31
   let COLUMN_WIDTHS = [
     "project": CGFloat(180),
     "actions": CGFloat(60),
     "command": CGFloat(160),
+    "report": CGFloat(160)
   ]
+  let LOM_RED = NSColor(red: 0.75, green: 0.15, blue: 0.09, alpha: 1.0) // #BF2718, rgb(191,39,24)
+  let LOM_RED_HL = NSColor(red: 0.92, green: 0.3, blue: 0.36, alpha: 1.0) // #EB4D5C, rgb(235,77,92)
 
   var refreshButton: NSButton?
   var tableView: NSTableView?
@@ -52,16 +55,20 @@ class ProjectListController: NSViewController {
     let projectCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "project"))
     projectCol.minWidth = COLUMN_WIDTHS["project"]!
 
-    let startStopCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "actions"))
-    startStopCol.minWidth = COLUMN_WIDTHS["actions"]!
-    startStopCol.maxWidth = COLUMN_WIDTHS["actions"]!
+    let actionsCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "actions"))
+    actionsCol.minWidth = COLUMN_WIDTHS["actions"]!
+    actionsCol.maxWidth = COLUMN_WIDTHS["actions"]!
 
-    let actionsCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "command"))
-    actionsCol.minWidth = COLUMN_WIDTHS["command"]!
+    // let commandCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "command"))
+    // commandCol.minWidth = COLUMN_WIDTHS["command"]!
+
+    let reportCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "report"))
+    reportCol.minWidth = COLUMN_WIDTHS["report"]!
 
     tableView!.addTableColumn(projectCol)
-    tableView!.addTableColumn(startStopCol)
     tableView!.addTableColumn(actionsCol)
+    // tableView!.addTableColumn(commandCol)
+    tableView!.addTableColumn(reportCol)
 
     self.view.addSubview(tableView!)
   }
@@ -111,18 +118,11 @@ extension ProjectListController: NSTextFieldDelegate {
 //------------------------------------------------------------------------------
 extension ProjectListController: NSTableViewDelegate, NSTableViewDataSource {
   func numberOfRows(in tableView: NSTableView) -> Int {
-    print("rows: \(projects!.count)")
     return projects!.count
   }
 
   func selectionShouldChange(in tableView: NSTableView) -> Bool {
     return false
-  }
-
-  override func validateProposedFirstResponder(_ responder: NSResponder, for event: NSEvent?) -> Bool {
-    print("validateProposedFirstResponder \(responder)")
-
-    return true
   }
 
   func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
@@ -143,8 +143,6 @@ extension ProjectListController: NSTableViewDelegate, NSTableViewDataSource {
         cellView.frame = NSRect(x: 0, y: 0, width: Int(COLUMN_WIDTHS["project"]!), height: ROW_HEIGHT)
 
         let label = NSTextField(labelWithString: projects![row])
-        label.isEditable = false
-        label.isSelectable = false
         label.autoresizingMask = [.minXMargin, .maxXMargin, .minYMargin, .maxYMargin]
         label.setFrameOrigin(NSPoint(
           x: 0,
@@ -155,11 +153,16 @@ extension ProjectListController: NSTableViewDelegate, NSTableViewDataSource {
         break
       case "actions":
         let status = Tempos.status(projects![row])
-        let button = NSButton(
+        let button = ColoredButton(
           title: status == "start" ? "Stop" : "Start",
           target: self,
-          action: status == "start" ? #selector(self.handleStop) : #selector(self.handleStart))
-        button.frame = NSRect(x: 0, y: 0, width: Int(COLUMN_WIDTHS["actions"]!) - 10, height: 20)
+          action: status == "start" ? #selector(self.handleStop) : #selector(self.handleStart)
+        )
+        button.frame = NSRect(x: 2, y: 0, width: Int(COLUMN_WIDTHS["actions"]!) - 4, height: 22)
+        if (status == "start") {
+          button.backgroundColor = LOM_RED
+          button.backgroundColorHover = LOM_RED_HL
+        }
         button.tag = row
 
         button.bezelStyle = .inline
@@ -172,24 +175,35 @@ extension ProjectListController: NSTableViewDelegate, NSTableViewDataSource {
         cellView.addSubview(button)
 
         break
-      case "command":
-        let command = NSTextField(frame: CGRect(x: 0, y: 0, width: Int(COLUMN_WIDTHS["command"]!) - 5, height: 20))
-        command.wantsLayer = true
+      // case "command":
+      //   let command = NSTextField(frame: CGRect(x: 0, y: 0, width: Int(COLUMN_WIDTHS["command"]!) - 5, height: 28))
+      //   command.wantsLayer = true
 
-        command.delegate = self
-        command.usesSingleLineMode = true
-        command.isEditable = true
-        command.isSelectable = true
-        command.isEnabled = true
-        command.backgroundColor = .white
-        command.autoresizingMask = [.minXMargin, .maxXMargin, .minYMargin, .maxYMargin]
-        command.setFrameOrigin(NSPoint(
-          x: (cellView.bounds.width - command.bounds.width) / 2,
-          y: (cellView.bounds.height - command.bounds.height) / 2
+      //   command.delegate = self
+      //   command.usesSingleLineMode = true
+      //   command.isEditable = true
+      //   command.isSelectable = true
+      //   command.isEnabled = true
+      //   command.backgroundColor = .white
+      //   command.autoresizingMask = [.minXMargin, .maxXMargin, .minYMargin, .maxYMargin]
+      //   command.setFrameOrigin(NSPoint(
+      //     x: (cellView.bounds.width - command.bounds.width) / 2,
+      //     y: (cellView.bounds.height - command.bounds.height) / 2
+      //   ))
+
+      //   cellView.addSubview(command)
+
+      //   break
+      case "report":
+        cellView.frame = NSRect(x: 0, y: 0, width: Int(COLUMN_WIDTHS["report"]!), height: ROW_HEIGHT)
+
+        let report = NSTextField(labelWithString: Tempos.report(projects![row]))
+        report.autoresizingMask = [.minXMargin, .maxXMargin, .minYMargin, .maxYMargin]
+        report.setFrameOrigin(NSPoint(
+          x: 0,
+          y: (cellView.bounds.height - report.bounds.height) / 2
         ))
-
-        cellView.addSubview(command)
-
+        cellView.addSubview(report)
         break
 
       default:

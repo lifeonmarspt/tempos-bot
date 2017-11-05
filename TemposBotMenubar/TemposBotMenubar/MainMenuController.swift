@@ -8,12 +8,12 @@
 
 import Cocoa
 
-class MainMenuController: NSObject, PreferencesWindowDelegate {
+class MainMenuController: NSObject {
   var statusItem: NSStatusItem!
   var preferencesWindow: PreferencesWindowController!
   var projectsListController: ProjectListController!
 
-  @IBOutlet weak var statusMenu: NSMenu!
+  @IBOutlet var statusMenu: NSMenu!
   @IBOutlet weak var currentUserItem: NSMenuItem!
   @IBOutlet weak var projectsListItem: NSMenuItem!
 
@@ -32,6 +32,8 @@ class MainMenuController: NSObject, PreferencesWindowDelegate {
   override func awakeFromNib() {
     statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     statusItem.title = "⏱🤖"
+
+    statusMenu.delegate = self
     statusItem.menu = statusMenu
 
     preferencesWindow = PreferencesWindowController()
@@ -39,10 +41,6 @@ class MainMenuController: NSObject, PreferencesWindowDelegate {
 
     projectsListController = ProjectListController()
 
-    setupMenuItems()
-  }
-
-  func preferencesDidUpdate() {
     setupMenuItems()
   }
 
@@ -61,5 +59,17 @@ class MainMenuController: NSObject, PreferencesWindowDelegate {
 
     currentUserItem.title = Git.commiter()
     projectsListItem.view = projectsListController.view
+  }
+}
+
+extension MainMenuController: PreferencesWindowDelegate {
+  func preferencesDidUpdate() {
+    setupMenuItems()
+  }
+}
+
+extension MainMenuController: NSMenuDelegate {
+  func menuWillOpen(_ menu: NSMenu) {
+    projectsListController.refresh()
   }
 }

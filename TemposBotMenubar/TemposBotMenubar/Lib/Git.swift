@@ -39,13 +39,35 @@ class Git {
   }
 
   static func pull() {
+    let task = prepareGitTask()
+    task.arguments = ["pull"]
+
+    task.launch()
+    task.waitUntilExit()
   }
 
   static func push() {
+    let task = prepareGitTask()
+    task.arguments = ["push"]
+
+    task.launch()
+    task.waitUntilExit()
+  }
+
+  static func add(path: String) {
+    let task = prepareGitTask()
+    task.arguments = ["add", path]
+
+    task.launch()
+    task.waitUntilExit()
   }
 
   static func commit(message: String) {
+    let task = prepareGitTask()
+    task.arguments = ["commit", "-m", message]
 
+    task.launch()
+    task.waitUntilExit()
   }
 
   private static func prepareGitTask() -> Process {
