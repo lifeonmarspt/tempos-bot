@@ -19,6 +19,7 @@ class ProjectListController: NSViewController {
     "command": CGFloat(160),
   ]
 
+  var refreshButton: NSButton?
   var tableView: NSTableView?
   var projects: Array<String>?
 
@@ -27,18 +28,21 @@ class ProjectListController: NSViewController {
 
     projects = Tempos.projects()
 
-    view = NSView(frame: NSRect(x: 0, y: 0, width: TABLE_WIDTH + 46, height: (ROW_HEIGHT * projects!.count) + 4))
+    view = NSView(frame: NSRect(x: 0, y: 0, width: TABLE_WIDTH + 46, height: ((ROW_HEIGHT + 2) * projects!.count)))
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
     print("ProjectsListController viewDidLoad")
 
+    refreshButton = NSButton(title: "Start", target: self, action: #selector(self.handleStart))
+
     tableView = NSTableView(frame: NSRect(x: 18, y: 0, width: TABLE_WIDTH, height: ROW_HEIGHT * projects!.count))
     tableView!.allowsColumnResizing = false
     tableView!.columnAutoresizingStyle = .noColumnAutoresizing
     tableView!.rowHeight = CGFloat(ROW_HEIGHT)
     tableView!.isEnabled = false
+    tableView!.rowSizeStyle = .custom
 
     tableView!.delegate = self
     tableView!.dataSource = self
@@ -62,12 +66,20 @@ class ProjectListController: NSViewController {
     self.view.addSubview(tableView!)
   }
 
-  @objc func handleStart() {
-    print("handleStart")
+  func refresh() {
+    projects = Tempos.projects()
+    view.frame = NSRect(x: 0, y: 0, width: TABLE_WIDTH + 46, height: ((ROW_HEIGHT + 2) * projects!.count))
+    tableView!.reloadData()
   }
 
-  @objc func handleStop() {
-    print("handleStop")
+  @objc func handleStart(sender: NSButton) {
+    Tempos.start(projects![sender.tag])
+    tableView!.reloadData()
+  }
+
+  @objc func handleStop(sender: NSButton) {
+    Tempos.stop(projects![sender.tag])
+    tableView!.reloadData()
   }
 }
 
@@ -113,6 +125,10 @@ extension ProjectListController: NSTableViewDelegate, NSTableViewDataSource {
     return true
   }
 
+  func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+    return CGFloat(ROW_HEIGHT)
+  }
+
   func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
 
     if let spareView = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "ProjectView"), owner: self) {
@@ -138,11 +154,15 @@ extension ProjectListController: NSTableViewDelegate, NSTableViewDataSource {
 
         break
       case "actions":
-        let button = NSButton(title: "Start", target: self, action: #selector(self.handleStart))
-
+        let status = Tempos.status(projects![row])
+        let button = NSButton(
+          title: status == "start" ? "Stop" : "Start",
+          target: self,
+          action: status == "start" ? #selector(self.handleStop) : #selector(self.handleStart))
         button.frame = NSRect(x: 0, y: 0, width: Int(COLUMN_WIDTHS["actions"]!) - 10, height: 20)
-        button.bezelStyle = .inline
+        button.tag = row
 
+        button.bezelStyle = .inline
         button.autoresizingMask = [.minXMargin, .maxXMargin, .minYMargin, .maxYMargin]
         button.setFrameOrigin(NSPoint(
           x: (cellView.bounds.width - button.bounds.width) / 2,

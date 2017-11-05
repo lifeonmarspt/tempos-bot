@@ -35,7 +35,7 @@ class Git {
 
     task.waitUntilExit()
 
-    return String(data: data, encoding: String.Encoding.utf8)!
+    return String(data: data, encoding: .utf8)!
   }
 
   static func pull() {

@@ -1,0 +1,1000 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046F514F0A4C6AEE2359B664686F9B23 /* Process+FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C789BB249FE4AF04ED35A3C4C887057 /* Process+FileKit.swift */; };
+		055B31D31DE95B66C92660F9AFED9B79 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2711999FB6C223EC50D1FDB23227C3 /* Path.swift */; };
+		05C28590129C797BD56986091D51F811 /* Pods-TemposBotMenubarUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3FEE9AC44618335582BEC0AD79FE885 /* Pods-TemposBotMenubarUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0CBBF1984E684DA070F7F53D512F58B6 /* Pods-TemposBotMenubarUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26CB1E3FE3E3AFBF2E4D2016624E0868 /* Pods-TemposBotMenubarUITests-dummy.m */; };
+		0CF05DEA2E62FC7ACE2F024C74FDF65B /* FileSystemEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A977356F59EF050A9A5111887B97CBC /* FileSystemEvent.swift */; };
+		11A868AE16FD7D6279D9AE9F8FE7E649 /* FileKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110D84F82C6E6AB349FE860CCBAEDE47 /* FileKitError.swift */; };
+		1623EFD3B920AB6824D0C9EC012FD62C /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886EF43BEB5BBB121B8502CB7014245B /* DataType.swift */; };
+		1957E1F2CA928FED0A0983FC1B2761AB /* String+FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DDC208E310B80143B51A7588A8233B /* String+FileKit.swift */; };
+		1AD4BDF642B900117B54D8A8FF00716E /* JSONType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1950B9C7061A75086F5D27466F9CAA2 /* JSONType.swift */; };
+		1EF09DEA70D2E5911369FE222CB9CC2D /* NSString+FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E215434F46FEF0C38810F839805FF8A /* NSString+FileKit.swift */; };
+		27FCBE6558150F05D782F966020DF5F0 /* Data+FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E4D5E3938E5A21CF69335B19580E27 /* Data+FileKit.swift */; };
+		28FFD8937F586C3BA3D90841E95C7CDF /* Dictionary+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC33727852A46719092A52A57A0128E /* Dictionary+File.swift */; };
+		2D6236EFB5EA24C6E8DE1C2E7621D816 /* FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EBBE96A4D457B10D9422FC7B35A1D5 /* FileKit.swift */; };
+		306F732060619B3CFD77A17D48077F56 /* DataFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33A8C61B11F51F07ED14511F68906B2 /* DataFile.swift */; };
+		30ECC68515AF1C60B4D4F3AD1CEAB25D /* FileProtection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50B10A4D2F037FB50C19552073A0034 /* FileProtection.swift */; };
+		332C407C50CCC3394B0294114352444F /* DirectoryEnumerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954B80D12EC6F412EFCD7FBFFC1457B /* DirectoryEnumerator.swift */; };
+		40F72E39F3FEAF6957959528ABBFC904 /* Pods-TemposBotMenubar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C42515439002967332CAE68DBA381A2 /* Pods-TemposBotMenubar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41BB18215DA504C92CB305FB73B9ABC3 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33089AB680AF8146F969F8DAB624ECC /* FileType.swift */; };
+		4241FB6EA455EF25793463A1BED1D30C /* PropertyListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AE888996B2ABC4E87E2438A1EA8F5F /* PropertyListType.swift */; };
+		52694D1FD40350542857D12FD17F9E06 /* Image+FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD9996689AC919247B64E89D7D70DD /* Image+FileKit.swift */; };
+		5A2846B6136E223E1CCF01AD94F5C287 /* FileSystemWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45027572A2F60C078B09150FF0D2FEEC /* FileSystemWatcher.swift */; };
+		5F430C95F799A2BE09325DDFCB6D899D /* FilePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9F3A18AA42B0A681922FEF0EDA5807 /* FilePermissions.swift */; };
+		6B02293D6D740BD077E9C42CF17B3682 /* RelativePathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D126BA8EF764455BACFB18EEB62AD80B /* RelativePathType.swift */; };
+		6CAB6FF8DADF2F3A99E924A0FCB90575 /* DispatchEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97349F2824D98E67736149199C11922 /* DispatchEvent.swift */; };
+		6FF954507E919C622DF458860544F9B6 /* DictionaryFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0255A37764AAFFCF95DA077628DD55 /* DictionaryFile.swift */; };
+		71D56880704D31FB4CCDE649733EC98F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490BDBAF016CCC0ACBFA8369893393EB /* File.swift */; };
+		738851C0CC9CFC3AC9A9781019FFA0DB /* NSArray+FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3374E614692617406992A2370FE70 /* NSArray+FileKit.swift */; };
+		77BA9B5B5CA81980F57AE861A57469D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		87B1F46581E6281A9C7E3401D39C1C66 /* FileKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC0C1E145A2F438AD60DF7063A7F52B /* FileKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FA2FA653EB318312F0E551B454D9736 /* ArrayFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147F44BF5E995A72C6CEE671D9BE3555 /* ArrayFile.swift */; };
+		B33BFD1455A8DBC6ECF274AF74D96300 /* Array+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A9678E35A99BC16F7ECB16BFCC864F /* Array+File.swift */; };
+		B92451EDA72022F9C81CC3FAAA8C1770 /* FileSystemEventStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D5272CEDD59AC4D141683F47FC8974 /* FileSystemEventStream.swift */; };
+		BBD7F26B4B5132DC42F24B0B7D0EAE7F /* NSData+FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CE16E056368380E117083719385EDD /* NSData+FileKit.swift */; };
+		BF16913A357BA12E82CEF6CFDDEACDDF /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADAEFCBA2A3F1DE74A80045DCCD7E59 /* Operators.swift */; };
+		C6EF833555AFBE46A9AF1ECA8DD7091E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		C8DC990BE36C4F0267BAFD9940DA6997 /* Pods-TemposBotMenubarTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E57B8ECA123A52B1911E0C739CD3B3D8 /* Pods-TemposBotMenubarTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C936076313F435354A75DECA352863BD /* DispatchWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4515C31B8D3AEB302F29A484674F98 /* DispatchWatcher.swift */; };
+		CEC530E2B28DAD551C2CEC04872326C7 /* ImageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3B4B19D09393A5100764A53CE42C57 /* ImageFile.swift */; };
+		D04A7CBDAB271B19FCAA2DE7E2792DE6 /* Pods-TemposBotMenubarTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D104FB9CAFEC408850747B63C4EF53E /* Pods-TemposBotMenubarTests-dummy.m */; };
+		D4E9F6A7D09F42038E2B065F0DA5DCED /* NSDictionary+FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76CCAE4A177E65295F2932F8F58FCB3 /* NSDictionary+FileKit.swift */; };
+		D7961E93BE2BDDBE471B212A44296736 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		D97A1C74109EDE9C1085E2B586377E3C /* Pods-TemposBotMenubar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 355A4EACC66DC350A09CAC219838679B /* Pods-TemposBotMenubar-dummy.m */; };
+		DB6E8E67160F1A2BDBF77839721272BC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */; };
+		E076E663C0FF9EBFE923D661C2943350 /* Bundle+FileKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D425C2784D69D4A5B1721A09579EE9 /* Bundle+FileKit.swift */; };
+		E3D28AC42992C0F96443C6C9BED52E85 /* TextFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4779807A43A9B7EF5ABAD9ABF30A778 /* TextFile.swift */; };
+		E5A46E8CDDD1CB63055FBDF25CF6A7B6 /* FileKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E50DB4F741592DBB7B51055B74F00B2 /* FileKit-dummy.m */; };
+		FF9B88798E6210EE53C7369E2659E73A /* NSDataFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E1E131746C39BBD00807EBF9CEA253 /* NSDataFile.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9F7B5AC42C8471840855AF69AD2616B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6354C524C38A202B7FC94EAB56EA54BE;
+			remoteInfo = FileKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04CE16E056368380E117083719385EDD /* NSData+FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSData+FileKit.swift"; path = "Sources/NSData+FileKit.swift"; sourceTree = "<group>"; };
+		07AE888996B2ABC4E87E2438A1EA8F5F /* PropertyListType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListType.swift; path = Sources/PropertyListType.swift; sourceTree = "<group>"; };
+		0A3B4B19D09393A5100764A53CE42C57 /* ImageFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFile.swift; path = Sources/ImageFile.swift; sourceTree = "<group>"; };
+		0C42515439002967332CAE68DBA381A2 /* Pods-TemposBotMenubar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TemposBotMenubar-umbrella.h"; sourceTree = "<group>"; };
+		0D0255A37764AAFFCF95DA077628DD55 /* DictionaryFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryFile.swift; path = Sources/DictionaryFile.swift; sourceTree = "<group>"; };
+		110D84F82C6E6AB349FE860CCBAEDE47 /* FileKitError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileKitError.swift; path = Sources/FileKitError.swift; sourceTree = "<group>"; };
+		147F44BF5E995A72C6CEE671D9BE3555 /* ArrayFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayFile.swift; path = Sources/ArrayFile.swift; sourceTree = "<group>"; };
+		16120EC2A6AE441A2300E4C8033BC555 /* FileKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FileKit.xcconfig; sourceTree = "<group>"; };
+		17F7C186D6378BAF10E22717DF1995A1 /* Pods-TemposBotMenubar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TemposBotMenubar.debug.xcconfig"; sourceTree = "<group>"; };
+		1888EF170B77915DD081D34C7F2DDC97 /* Pods_TemposBotMenubarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TemposBotMenubarUITests.framework; path = "Pods-TemposBotMenubarUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		228A4577F34BE14E72B06488DBBCC490 /* Pods_TemposBotMenubar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TemposBotMenubar.framework; path = "Pods-TemposBotMenubar.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CB1E3FE3E3AFBF2E4D2016624E0868 /* Pods-TemposBotMenubarUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TemposBotMenubarUITests-dummy.m"; sourceTree = "<group>"; };
+		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2A977356F59EF050A9A5111887B97CBC /* FileSystemEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSystemEvent.swift; path = Sources/FileSystemEvent.swift; sourceTree = "<group>"; };
+		2AF76BDEDBD7CA07B91A02A02219C3E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B4515C31B8D3AEB302F29A484674F98 /* DispatchWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchWatcher.swift; path = Sources/DispatchWatcher.swift; sourceTree = "<group>"; };
+		2C789BB249FE4AF04ED35A3C4C887057 /* Process+FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Process+FileKit.swift"; path = "Sources/Process+FileKit.swift"; sourceTree = "<group>"; };
+		2C9F3A18AA42B0A681922FEF0EDA5807 /* FilePermissions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilePermissions.swift; path = Sources/FilePermissions.swift; sourceTree = "<group>"; };
+		30D425C2784D69D4A5B1721A09579EE9 /* Bundle+FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Bundle+FileKit.swift"; path = "Sources/Bundle+FileKit.swift"; sourceTree = "<group>"; };
+		30E4D5E3938E5A21CF69335B19580E27 /* Data+FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+FileKit.swift"; path = "Sources/Data+FileKit.swift"; sourceTree = "<group>"; };
+		31D1785B33A227AD74ED205F36F3CC48 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		345D33762D8D16972FAC8B8A7B18DC3F /* Pods-TemposBotMenubarTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TemposBotMenubarTests-frameworks.sh"; sourceTree = "<group>"; };
+		355A4EACC66DC350A09CAC219838679B /* Pods-TemposBotMenubar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TemposBotMenubar-dummy.m"; sourceTree = "<group>"; };
+		38733583401107ABC3E83F0B5BA15853 /* Pods-TemposBotMenubarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TemposBotMenubarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3ADAEFCBA2A3F1DE74A80045DCCD7E59 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
+		40A0C51369F2D966966B8CD55FA80613 /* Pods-TemposBotMenubarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TemposBotMenubarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		45027572A2F60C078B09150FF0D2FEEC /* FileSystemWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSystemWatcher.swift; path = Sources/FileSystemWatcher.swift; sourceTree = "<group>"; };
+		489A4E9CC5713DE8ED6FD87826D3AE09 /* Pods-TemposBotMenubar-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TemposBotMenubar-resources.sh"; sourceTree = "<group>"; };
+		490BDBAF016CCC0ACBFA8369893393EB /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = File.swift; path = Sources/File.swift; sourceTree = "<group>"; };
+		50CBF4A9DC467BEE0B87EF0B29CAEC41 /* FileKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FileKit-prefix.pch"; sourceTree = "<group>"; };
+		5BC0C1E145A2F438AD60DF7063A7F52B /* FileKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FileKit-umbrella.h"; sourceTree = "<group>"; };
+		5C7C56790F399A06EC885E956C21E072 /* Pods-TemposBotMenubarTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TemposBotMenubarTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5DC7F76FA5DB3F6F84662C665FB2CC08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61A59F662C3BEF3EAB6F4CAEBA8ADE4A /* Pods-TemposBotMenubarTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TemposBotMenubarTests-resources.sh"; sourceTree = "<group>"; };
+		7162D508095A47665CA605DB9C3ED807 /* Pods-TemposBotMenubarTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TemposBotMenubarTests.modulemap"; sourceTree = "<group>"; };
+		743EFAE071CE5A9E8F5D429806FC08EC /* Pods_TemposBotMenubarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TemposBotMenubarTests.framework; path = "Pods-TemposBotMenubarTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		766714CE524ABE21B8EB224872C70B6B /* Pods-TemposBotMenubar-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TemposBotMenubar-acknowledgements.plist"; sourceTree = "<group>"; };
+		78950E7824E2D45DCFFE0F3C945E7240 /* Pods-TemposBotMenubarTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TemposBotMenubarTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D104FB9CAFEC408850747B63C4EF53E /* Pods-TemposBotMenubarTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TemposBotMenubarTests-dummy.m"; sourceTree = "<group>"; };
+		7E215434F46FEF0C38810F839805FF8A /* NSString+FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSString+FileKit.swift"; path = "Sources/NSString+FileKit.swift"; sourceTree = "<group>"; };
+		7E50DB4F741592DBB7B51055B74F00B2 /* FileKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FileKit-dummy.m"; sourceTree = "<group>"; };
+		8142BAFD69D20B9D68E0D4B33548F185 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84E1E131746C39BBD00807EBF9CEA253 /* NSDataFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDataFile.swift; path = Sources/NSDataFile.swift; sourceTree = "<group>"; };
+		886EF43BEB5BBB121B8502CB7014245B /* DataType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataType.swift; path = Sources/DataType.swift; sourceTree = "<group>"; };
+		8AA0848480903CCCECD8C4E7A9771046 /* FileKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FileKit.modulemap; sourceTree = "<group>"; };
+		8D05D73526C7E5F75C30576E5C42D1CD /* Pods-TemposBotMenubarUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TemposBotMenubarUITests.modulemap"; sourceTree = "<group>"; };
+		8EEF84A3D00B1D55D5135208E1DB46E5 /* Pods-TemposBotMenubar-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TemposBotMenubar-acknowledgements.markdown"; sourceTree = "<group>"; };
+		921E9723383A09F57D6307F2E1212C88 /* Pods-TemposBotMenubarUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TemposBotMenubarUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94E49718CE4AE1403145F9B789A6FF31 /* Pods-TemposBotMenubarUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TemposBotMenubarUITests-resources.sh"; sourceTree = "<group>"; };
+		96218C9F8F79E3F2D1FA452CC1F315C5 /* FileKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FileKit.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3203893B48511B93D4B3F911EC42874 /* Pods-TemposBotMenubar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TemposBotMenubar.release.xcconfig"; sourceTree = "<group>"; };
+		A4D046F71D447226F701A411BAF7EE9D /* Pods-TemposBotMenubar-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TemposBotMenubar-frameworks.sh"; sourceTree = "<group>"; };
+		A954B80D12EC6F412EFCD7FBFFC1457B /* DirectoryEnumerator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DirectoryEnumerator.swift; path = Sources/DirectoryEnumerator.swift; sourceTree = "<group>"; };
+		AEC33727852A46719092A52A57A0128E /* Dictionary+File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+File.swift"; path = "Sources/Dictionary+File.swift"; sourceTree = "<group>"; };
+		B2DBCFD627737C61906BACF4717E1AD5 /* Pods-TemposBotMenubarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TemposBotMenubarTests.release.xcconfig"; sourceTree = "<group>"; };
+		B33A8C61B11F51F07ED14511F68906B2 /* DataFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataFile.swift; path = Sources/DataFile.swift; sourceTree = "<group>"; };
+		B34F16EA779E2FC392BB97F2C17C38CC /* Pods-TemposBotMenubarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TemposBotMenubarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE12684C827E20FDEFFCB90FEE31B764 /* Pods-TemposBotMenubarUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TemposBotMenubarUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C0DDC208E310B80143B51A7588A8233B /* String+FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+FileKit.swift"; path = "Sources/String+FileKit.swift"; sourceTree = "<group>"; };
+		C1950B9C7061A75086F5D27466F9CAA2 /* JSONType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONType.swift; path = Sources/JSONType.swift; sourceTree = "<group>"; };
+		C4779807A43A9B7EF5ABAD9ABF30A778 /* TextFile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFile.swift; path = Sources/TextFile.swift; sourceTree = "<group>"; };
+		C4F3374E614692617406992A2370FE70 /* NSArray+FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSArray+FileKit.swift"; path = "Sources/NSArray+FileKit.swift"; sourceTree = "<group>"; };
+		D126BA8EF764455BACFB18EEB62AD80B /* RelativePathType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RelativePathType.swift; path = Sources/RelativePathType.swift; sourceTree = "<group>"; };
+		D33089AB680AF8146F969F8DAB624ECC /* FileType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileType.swift; path = Sources/FileType.swift; sourceTree = "<group>"; };
+		D50B10A4D2F037FB50C19552073A0034 /* FileProtection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileProtection.swift; path = Sources/FileProtection.swift; sourceTree = "<group>"; };
+		DBE0D6D19F1471AB3427CD0112E31D44 /* Pods-TemposBotMenubarUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TemposBotMenubarUITests-frameworks.sh"; sourceTree = "<group>"; };
+		DC07847C561E779D9494CDB02FEC5B26 /* Pods-TemposBotMenubar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TemposBotMenubar.modulemap"; sourceTree = "<group>"; };
+		DDDD9996689AC919247B64E89D7D70DD /* Image+FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Image+FileKit.swift"; path = "Sources/Image+FileKit.swift"; sourceTree = "<group>"; };
+		E57B8ECA123A52B1911E0C739CD3B3D8 /* Pods-TemposBotMenubarTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TemposBotMenubarTests-umbrella.h"; sourceTree = "<group>"; };
+		E5A9678E35A99BC16F7ECB16BFCC864F /* Array+File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+File.swift"; path = "Sources/Array+File.swift"; sourceTree = "<group>"; };
+		EF2711999FB6C223EC50D1FDB23227C3 /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Path.swift; path = Sources/Path.swift; sourceTree = "<group>"; };
+		F2D5272CEDD59AC4D141683F47FC8974 /* FileSystemEventStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileSystemEventStream.swift; path = Sources/FileSystemEventStream.swift; sourceTree = "<group>"; };
+		F3FEE9AC44618335582BEC0AD79FE885 /* Pods-TemposBotMenubarUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TemposBotMenubarUITests-umbrella.h"; sourceTree = "<group>"; };
+		F76CCAE4A177E65295F2932F8F58FCB3 /* NSDictionary+FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDictionary+FileKit.swift"; path = "Sources/NSDictionary+FileKit.swift"; sourceTree = "<group>"; };
+		F97349F2824D98E67736149199C11922 /* DispatchEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DispatchEvent.swift; path = Sources/DispatchEvent.swift; sourceTree = "<group>"; };
+		F9EBBE96A4D457B10D9422FC7B35A1D5 /* FileKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileKit.swift; path = Sources/FileKit.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		012330A277826C5AD7C00D9C72B40AC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB6E8E67160F1A2BDBF77839721272BC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21C4870B477DDA609282FA6235B39C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BA9B5B5CA81980F57AE861A57469D2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A95832E96DB12A231B04614366415E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7961E93BE2BDDBE471B212A44296736 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50B70291B045F125231348B95C81016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EF833555AFBE46A9AF1ECA8DD7091E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C068A18C5413F804A2959126093416 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		3858488970DB53D993B771B3F3D183DC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DEB6CDDC7445910771139B94D2986CCC /* Pods-TemposBotMenubar */,
+				492AB57F524B457B8B352264BB93E24E /* Pods-TemposBotMenubarTests */,
+				4CD32449912ED5BFFF9289C03A2F2FEA /* Pods-TemposBotMenubarUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C068A18C5413F804A2959126093416 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		492AB57F524B457B8B352264BB93E24E /* Pods-TemposBotMenubarTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DC7F76FA5DB3F6F84662C665FB2CC08 /* Info.plist */,
+				7162D508095A47665CA605DB9C3ED807 /* Pods-TemposBotMenubarTests.modulemap */,
+				78950E7824E2D45DCFFE0F3C945E7240 /* Pods-TemposBotMenubarTests-acknowledgements.markdown */,
+				5C7C56790F399A06EC885E956C21E072 /* Pods-TemposBotMenubarTests-acknowledgements.plist */,
+				7D104FB9CAFEC408850747B63C4EF53E /* Pods-TemposBotMenubarTests-dummy.m */,
+				345D33762D8D16972FAC8B8A7B18DC3F /* Pods-TemposBotMenubarTests-frameworks.sh */,
+				61A59F662C3BEF3EAB6F4CAEBA8ADE4A /* Pods-TemposBotMenubarTests-resources.sh */,
+				E57B8ECA123A52B1911E0C739CD3B3D8 /* Pods-TemposBotMenubarTests-umbrella.h */,
+				38733583401107ABC3E83F0B5BA15853 /* Pods-TemposBotMenubarTests.debug.xcconfig */,
+				B2DBCFD627737C61906BACF4717E1AD5 /* Pods-TemposBotMenubarTests.release.xcconfig */,
+			);
+			name = "Pods-TemposBotMenubarTests";
+			path = "Target Support Files/Pods-TemposBotMenubarTests";
+			sourceTree = "<group>";
+		};
+		4CD32449912ED5BFFF9289C03A2F2FEA /* Pods-TemposBotMenubarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2AF76BDEDBD7CA07B91A02A02219C3E3 /* Info.plist */,
+				8D05D73526C7E5F75C30576E5C42D1CD /* Pods-TemposBotMenubarUITests.modulemap */,
+				921E9723383A09F57D6307F2E1212C88 /* Pods-TemposBotMenubarUITests-acknowledgements.markdown */,
+				BE12684C827E20FDEFFCB90FEE31B764 /* Pods-TemposBotMenubarUITests-acknowledgements.plist */,
+				26CB1E3FE3E3AFBF2E4D2016624E0868 /* Pods-TemposBotMenubarUITests-dummy.m */,
+				DBE0D6D19F1471AB3427CD0112E31D44 /* Pods-TemposBotMenubarUITests-frameworks.sh */,
+				94E49718CE4AE1403145F9B789A6FF31 /* Pods-TemposBotMenubarUITests-resources.sh */,
+				F3FEE9AC44618335582BEC0AD79FE885 /* Pods-TemposBotMenubarUITests-umbrella.h */,
+				40A0C51369F2D966966B8CD55FA80613 /* Pods-TemposBotMenubarUITests.debug.xcconfig */,
+				B34F16EA779E2FC392BB97F2C17C38CC /* Pods-TemposBotMenubarUITests.release.xcconfig */,
+			);
+			name = "Pods-TemposBotMenubarUITests";
+			path = "Target Support Files/Pods-TemposBotMenubarUITests";
+			sourceTree = "<group>";
+		};
+		5B8900CE8114C4D828C5D8F58C1B6180 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AA0848480903CCCECD8C4E7A9771046 /* FileKit.modulemap */,
+				16120EC2A6AE441A2300E4C8033BC555 /* FileKit.xcconfig */,
+				7E50DB4F741592DBB7B51055B74F00B2 /* FileKit-dummy.m */,
+				50CBF4A9DC467BEE0B87EF0B29CAEC41 /* FileKit-prefix.pch */,
+				5BC0C1E145A2F438AD60DF7063A7F52B /* FileKit-umbrella.h */,
+				31D1785B33A227AD74ED205F36F3CC48 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FileKit";
+			sourceTree = "<group>";
+		};
+		7111B4575B5BBD1A00309D31F2FA5F45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96F3C63C9BDEF861D48D98B58AC179AB /* FileKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				7111B4575B5BBD1A00309D31F2FA5F45 /* Pods */,
+				9FFB7ED3546A7272733B03FCD6CAF477 /* Products */,
+				3858488970DB53D993B771B3F3D183DC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		96F3C63C9BDEF861D48D98B58AC179AB /* FileKit */ = {
+			isa = PBXGroup;
+			children = (
+				E5A9678E35A99BC16F7ECB16BFCC864F /* Array+File.swift */,
+				147F44BF5E995A72C6CEE671D9BE3555 /* ArrayFile.swift */,
+				30D425C2784D69D4A5B1721A09579EE9 /* Bundle+FileKit.swift */,
+				30E4D5E3938E5A21CF69335B19580E27 /* Data+FileKit.swift */,
+				B33A8C61B11F51F07ED14511F68906B2 /* DataFile.swift */,
+				886EF43BEB5BBB121B8502CB7014245B /* DataType.swift */,
+				AEC33727852A46719092A52A57A0128E /* Dictionary+File.swift */,
+				0D0255A37764AAFFCF95DA077628DD55 /* DictionaryFile.swift */,
+				A954B80D12EC6F412EFCD7FBFFC1457B /* DirectoryEnumerator.swift */,
+				F97349F2824D98E67736149199C11922 /* DispatchEvent.swift */,
+				2B4515C31B8D3AEB302F29A484674F98 /* DispatchWatcher.swift */,
+				490BDBAF016CCC0ACBFA8369893393EB /* File.swift */,
+				F9EBBE96A4D457B10D9422FC7B35A1D5 /* FileKit.swift */,
+				110D84F82C6E6AB349FE860CCBAEDE47 /* FileKitError.swift */,
+				2C9F3A18AA42B0A681922FEF0EDA5807 /* FilePermissions.swift */,
+				D50B10A4D2F037FB50C19552073A0034 /* FileProtection.swift */,
+				2A977356F59EF050A9A5111887B97CBC /* FileSystemEvent.swift */,
+				F2D5272CEDD59AC4D141683F47FC8974 /* FileSystemEventStream.swift */,
+				45027572A2F60C078B09150FF0D2FEEC /* FileSystemWatcher.swift */,
+				D33089AB680AF8146F969F8DAB624ECC /* FileType.swift */,
+				DDDD9996689AC919247B64E89D7D70DD /* Image+FileKit.swift */,
+				0A3B4B19D09393A5100764A53CE42C57 /* ImageFile.swift */,
+				C1950B9C7061A75086F5D27466F9CAA2 /* JSONType.swift */,
+				C4F3374E614692617406992A2370FE70 /* NSArray+FileKit.swift */,
+				04CE16E056368380E117083719385EDD /* NSData+FileKit.swift */,
+				84E1E131746C39BBD00807EBF9CEA253 /* NSDataFile.swift */,
+				F76CCAE4A177E65295F2932F8F58FCB3 /* NSDictionary+FileKit.swift */,
+				7E215434F46FEF0C38810F839805FF8A /* NSString+FileKit.swift */,
+				3ADAEFCBA2A3F1DE74A80045DCCD7E59 /* Operators.swift */,
+				EF2711999FB6C223EC50D1FDB23227C3 /* Path.swift */,
+				2C789BB249FE4AF04ED35A3C4C887057 /* Process+FileKit.swift */,
+				07AE888996B2ABC4E87E2438A1EA8F5F /* PropertyListType.swift */,
+				D126BA8EF764455BACFB18EEB62AD80B /* RelativePathType.swift */,
+				C0DDC208E310B80143B51A7588A8233B /* String+FileKit.swift */,
+				C4779807A43A9B7EF5ABAD9ABF30A778 /* TextFile.swift */,
+				5B8900CE8114C4D828C5D8F58C1B6180 /* Support Files */,
+			);
+			name = FileKit;
+			path = FileKit;
+			sourceTree = "<group>";
+		};
+		9FFB7ED3546A7272733B03FCD6CAF477 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96218C9F8F79E3F2D1FA452CC1F315C5 /* FileKit.framework */,
+				228A4577F34BE14E72B06488DBBCC490 /* Pods_TemposBotMenubar.framework */,
+				743EFAE071CE5A9E8F5D429806FC08EC /* Pods_TemposBotMenubarTests.framework */,
+				1888EF170B77915DD081D34C7F2DDC97 /* Pods_TemposBotMenubarUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEB6CDDC7445910771139B94D2986CCC /* Pods-TemposBotMenubar */ = {
+			isa = PBXGroup;
+			children = (
+				8142BAFD69D20B9D68E0D4B33548F185 /* Info.plist */,
+				DC07847C561E779D9494CDB02FEC5B26 /* Pods-TemposBotMenubar.modulemap */,
+				8EEF84A3D00B1D55D5135208E1DB46E5 /* Pods-TemposBotMenubar-acknowledgements.markdown */,
+				766714CE524ABE21B8EB224872C70B6B /* Pods-TemposBotMenubar-acknowledgements.plist */,
+				355A4EACC66DC350A09CAC219838679B /* Pods-TemposBotMenubar-dummy.m */,
+				A4D046F71D447226F701A411BAF7EE9D /* Pods-TemposBotMenubar-frameworks.sh */,
+				489A4E9CC5713DE8ED6FD87826D3AE09 /* Pods-TemposBotMenubar-resources.sh */,
+				0C42515439002967332CAE68DBA381A2 /* Pods-TemposBotMenubar-umbrella.h */,
+				17F7C186D6378BAF10E22717DF1995A1 /* Pods-TemposBotMenubar.debug.xcconfig */,
+				A3203893B48511B93D4B3F911EC42874 /* Pods-TemposBotMenubar.release.xcconfig */,
+			);
+			name = "Pods-TemposBotMenubar";
+			path = "Target Support Files/Pods-TemposBotMenubar";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		109AC2DC8FA1C327193A66F4BA0D51F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40F72E39F3FEAF6957959528ABBFC904 /* Pods-TemposBotMenubar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1624F80D528153B841D4F14659D8A1D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B1F46581E6281A9C7E3401D39C1C66 /* FileKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0AC3D932E86E5483D386BA650FFBBA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C28590129C797BD56986091D51F811 /* Pods-TemposBotMenubarUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		453916BBD059E59C68F12F276EE8A663 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8DC990BE36C4F0267BAFD9940DA6997 /* Pods-TemposBotMenubarTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6354C524C38A202B7FC94EAB56EA54BE /* FileKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0F89BF64237A506831E3101DEAF99D3 /* Build configuration list for PBXNativeTarget "FileKit" */;
+			buildPhases = (
+				82707420B3E61ACE39931A04B5888424 /* Sources */,
+				B21C4870B477DDA609282FA6235B39C4 /* Frameworks */,
+				1624F80D528153B841D4F14659D8A1D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileKit;
+			productName = FileKit;
+			productReference = 96218C9F8F79E3F2D1FA452CC1F315C5 /* FileKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE04C4DB3A8A07E2752FBFF2DA08916F /* Pods-TemposBotMenubarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0BC31D2495BD3B4082D11A7F637037D /* Build configuration list for PBXNativeTarget "Pods-TemposBotMenubarUITests" */;
+			buildPhases = (
+				1AEA95CCDBF7D0AF46FBB9FA39D4F801 /* Sources */,
+				D1A95832E96DB12A231B04614366415E /* Frameworks */,
+				2C0AC3D932E86E5483D386BA650FFBBA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TemposBotMenubarUITests";
+			productName = "Pods-TemposBotMenubarUITests";
+			productReference = 1888EF170B77915DD081D34C7F2DDC97 /* Pods_TemposBotMenubarUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C10736A6F7F7D4595C9189A7800D83A2 /* Pods-TemposBotMenubarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4367F98631CA06F733BBB8348A17E48A /* Build configuration list for PBXNativeTarget "Pods-TemposBotMenubarTests" */;
+			buildPhases = (
+				98E391DC81B5F82D6AC844FB405165E2 /* Sources */,
+				F50B70291B045F125231348B95C81016 /* Frameworks */,
+				453916BBD059E59C68F12F276EE8A663 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TemposBotMenubarTests";
+			productName = "Pods-TemposBotMenubarTests";
+			productReference = 743EFAE071CE5A9E8F5D429806FC08EC /* Pods_TemposBotMenubarTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE6A6A2C99388A202FF9D6A2CE2920FE /* Pods-TemposBotMenubar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 359A1306B730E4AC966B03039FB2EA3A /* Build configuration list for PBXNativeTarget "Pods-TemposBotMenubar" */;
+			buildPhases = (
+				B07B247B631F7F14F13F55E9E92C1578 /* Sources */,
+				012330A277826C5AD7C00D9C72B40AC4 /* Frameworks */,
+				109AC2DC8FA1C327193A66F4BA0D51F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4287DF06095AEC9C133811AB4E7E25C8 /* PBXTargetDependency */,
+			);
+			name = "Pods-TemposBotMenubar";
+			productName = "Pods-TemposBotMenubar";
+			productReference = 228A4577F34BE14E72B06488DBBCC490 /* Pods_TemposBotMenubar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 9FFB7ED3546A7272733B03FCD6CAF477 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6354C524C38A202B7FC94EAB56EA54BE /* FileKit */,
+				FE6A6A2C99388A202FF9D6A2CE2920FE /* Pods-TemposBotMenubar */,
+				C10736A6F7F7D4595C9189A7800D83A2 /* Pods-TemposBotMenubarTests */,
+				BE04C4DB3A8A07E2752FBFF2DA08916F /* Pods-TemposBotMenubarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AEA95CCDBF7D0AF46FBB9FA39D4F801 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CBBF1984E684DA070F7F53D512F58B6 /* Pods-TemposBotMenubarUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82707420B3E61ACE39931A04B5888424 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B33BFD1455A8DBC6ECF274AF74D96300 /* Array+File.swift in Sources */,
+				8FA2FA653EB318312F0E551B454D9736 /* ArrayFile.swift in Sources */,
+				E076E663C0FF9EBFE923D661C2943350 /* Bundle+FileKit.swift in Sources */,
+				27FCBE6558150F05D782F966020DF5F0 /* Data+FileKit.swift in Sources */,
+				306F732060619B3CFD77A17D48077F56 /* DataFile.swift in Sources */,
+				1623EFD3B920AB6824D0C9EC012FD62C /* DataType.swift in Sources */,
+				28FFD8937F586C3BA3D90841E95C7CDF /* Dictionary+File.swift in Sources */,
+				6FF954507E919C622DF458860544F9B6 /* DictionaryFile.swift in Sources */,
+				332C407C50CCC3394B0294114352444F /* DirectoryEnumerator.swift in Sources */,
+				6CAB6FF8DADF2F3A99E924A0FCB90575 /* DispatchEvent.swift in Sources */,
+				C936076313F435354A75DECA352863BD /* DispatchWatcher.swift in Sources */,
+				71D56880704D31FB4CCDE649733EC98F /* File.swift in Sources */,
+				E5A46E8CDDD1CB63055FBDF25CF6A7B6 /* FileKit-dummy.m in Sources */,
+				2D6236EFB5EA24C6E8DE1C2E7621D816 /* FileKit.swift in Sources */,
+				11A868AE16FD7D6279D9AE9F8FE7E649 /* FileKitError.swift in Sources */,
+				5F430C95F799A2BE09325DDFCB6D899D /* FilePermissions.swift in Sources */,
+				30ECC68515AF1C60B4D4F3AD1CEAB25D /* FileProtection.swift in Sources */,
+				0CF05DEA2E62FC7ACE2F024C74FDF65B /* FileSystemEvent.swift in Sources */,
+				B92451EDA72022F9C81CC3FAAA8C1770 /* FileSystemEventStream.swift in Sources */,
+				5A2846B6136E223E1CCF01AD94F5C287 /* FileSystemWatcher.swift in Sources */,
+				41BB18215DA504C92CB305FB73B9ABC3 /* FileType.swift in Sources */,
+				52694D1FD40350542857D12FD17F9E06 /* Image+FileKit.swift in Sources */,
+				CEC530E2B28DAD551C2CEC04872326C7 /* ImageFile.swift in Sources */,
+				1AD4BDF642B900117B54D8A8FF00716E /* JSONType.swift in Sources */,
+				738851C0CC9CFC3AC9A9781019FFA0DB /* NSArray+FileKit.swift in Sources */,
+				BBD7F26B4B5132DC42F24B0B7D0EAE7F /* NSData+FileKit.swift in Sources */,
+				FF9B88798E6210EE53C7369E2659E73A /* NSDataFile.swift in Sources */,
+				D4E9F6A7D09F42038E2B065F0DA5DCED /* NSDictionary+FileKit.swift in Sources */,
+				1EF09DEA70D2E5911369FE222CB9CC2D /* NSString+FileKit.swift in Sources */,
+				BF16913A357BA12E82CEF6CFDDEACDDF /* Operators.swift in Sources */,
+				055B31D31DE95B66C92660F9AFED9B79 /* Path.swift in Sources */,
+				046F514F0A4C6AEE2359B664686F9B23 /* Process+FileKit.swift in Sources */,
+				4241FB6EA455EF25793463A1BED1D30C /* PropertyListType.swift in Sources */,
+				6B02293D6D740BD077E9C42CF17B3682 /* RelativePathType.swift in Sources */,
+				1957E1F2CA928FED0A0983FC1B2761AB /* String+FileKit.swift in Sources */,
+				E3D28AC42992C0F96443C6C9BED52E85 /* TextFile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98E391DC81B5F82D6AC844FB405165E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D04A7CBDAB271B19FCAA2DE7E2792DE6 /* Pods-TemposBotMenubarTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B07B247B631F7F14F13F55E9E92C1578 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97A1C74109EDE9C1085E2B586377E3C /* Pods-TemposBotMenubar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4287DF06095AEC9C133811AB4E7E25C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FileKit;
+			target = 6354C524C38A202B7FC94EAB56EA54BE /* FileKit */;
+			targetProxy = A9F7B5AC42C8471840855AF69AD2616B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E874FC1E11EA46A506D32C67EC68439 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1760DE4C8FAE313B8BBE8B509AE21AE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		29EDCDF24B721E0DE09D59B2F9714D44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17F7C186D6378BAF10E22717DF1995A1 /* Pods-TemposBotMenubar.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-TemposBotMenubar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-TemposBotMenubar/Pods-TemposBotMenubar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TemposBotMenubar;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B66825344A86CF828719EA4BBC8E110 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2DBCFD627737C61906BACF4717E1AD5 /* Pods-TemposBotMenubarTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-TemposBotMenubarTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-TemposBotMenubarTests/Pods-TemposBotMenubarTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TemposBotMenubarTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3682CC14CF7627B239393328A5B8FD6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34F16EA779E2FC392BB97F2C17C38CC /* Pods-TemposBotMenubarUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-TemposBotMenubarUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-TemposBotMenubarUITests/Pods-TemposBotMenubarUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TemposBotMenubarUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		776B6617DB8F76B611DA7CE5034DCBF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16120EC2A6AE441A2300E4C8033BC555 /* FileKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FileKit/FileKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FileKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/FileKit/FileKit.modulemap";
+				PRODUCT_NAME = FileKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C77C3F69116CBBC63BF4F076DFA1371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A0C51369F2D966966B8CD55FA80613 /* Pods-TemposBotMenubarUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-TemposBotMenubarUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-TemposBotMenubarUITests/Pods-TemposBotMenubarUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TemposBotMenubarUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BFD114A5B04795D581F32CD49154AA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16120EC2A6AE441A2300E4C8033BC555 /* FileKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FileKit/FileKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FileKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/FileKit/FileKit.modulemap";
+				PRODUCT_NAME = FileKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C83EBFFEE4827E990D4F2154E6139045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38733583401107ABC3E83F0B5BA15853 /* Pods-TemposBotMenubarTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-TemposBotMenubarTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-TemposBotMenubarTests/Pods-TemposBotMenubarTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TemposBotMenubarTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E49B73D43FC4C56CB775E405835AB7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3203893B48511B93D4B3F911EC42874 /* Pods-TemposBotMenubar.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-TemposBotMenubar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULEMAP_FILE = "Target Support Files/Pods-TemposBotMenubar/Pods-TemposBotMenubar.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TemposBotMenubar;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1760DE4C8FAE313B8BBE8B509AE21AE2 /* Debug */,
+				0E874FC1E11EA46A506D32C67EC68439 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		359A1306B730E4AC966B03039FB2EA3A /* Build configuration list for PBXNativeTarget "Pods-TemposBotMenubar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29EDCDF24B721E0DE09D59B2F9714D44 /* Debug */,
+				E49B73D43FC4C56CB775E405835AB7E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4367F98631CA06F733BBB8348A17E48A /* Build configuration list for PBXNativeTarget "Pods-TemposBotMenubarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C83EBFFEE4827E990D4F2154E6139045 /* Debug */,
+				2B66825344A86CF828719EA4BBC8E110 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0F89BF64237A506831E3101DEAF99D3 /* Build configuration list for PBXNativeTarget "FileKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFD114A5B04795D581F32CD49154AA06 /* Debug */,
+				776B6617DB8F76B611DA7CE5034DCBF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0BC31D2495BD3B4082D11A7F637037D /* Build configuration list for PBXNativeTarget "Pods-TemposBotMenubarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C77C3F69116CBBC63BF4F076DFA1371 /* Debug */,
+				3682CC14CF7627B239393328A5B8FD6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

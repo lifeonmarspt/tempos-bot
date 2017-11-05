@@ -17,6 +17,10 @@ class MainMenuController: NSObject, PreferencesWindowDelegate {
   @IBOutlet weak var currentUserItem: NSMenuItem!
   @IBOutlet weak var projectsListItem: NSMenuItem!
 
+  @IBAction func refreshClicked(sender: NSMenuItem) {
+    projectsListController.refresh()
+  }
+
   @IBAction func preferencesClicked(sender: NSMenuItem) {
     preferencesWindow.showWindow(nil)
   }
@@ -48,6 +52,7 @@ class MainMenuController: NSObject, PreferencesWindowDelegate {
 
     // default values
     currentUserItem.title = "Please set a valid repository in preferences"
+    projectsListController.refresh()
 
     if let repo = defaultRepo {
       if (repo.isEmpty) { return }

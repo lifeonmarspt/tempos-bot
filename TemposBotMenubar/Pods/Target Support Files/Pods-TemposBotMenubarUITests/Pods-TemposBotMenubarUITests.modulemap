@@ -1,0 +1,6 @@
+framework module Pods_TemposBotMenubarUITests {
+  umbrella header "Pods-TemposBotMenubarUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

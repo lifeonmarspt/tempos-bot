@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AD9E681C6A463E267011B14 /* Pods_TemposBotMenubarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B27EB33435C0E8BE08CE6DB /* Pods_TemposBotMenubarTests.framework */; };
+		48ABF5A2CC47E4F52C5B6AD1 /* Pods_TemposBotMenubarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B767364DF32C93377BCDF1ED /* Pods_TemposBotMenubarUITests.framework */; };
+		5EA082B3123BE574E0D65505 /* Pods_TemposBotMenubar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2914A9D9759F2CD14C5368 /* Pods_TemposBotMenubar.framework */; };
 		AE09CB281FA3794C00D3BFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB271FA3794C00D3BFB1 /* AppDelegate.swift */; };
 		AE09CB2A1FA3794C00D3BFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE09CB291FA3794C00D3BFB1 /* Assets.xcassets */; };
 		AE09CB2D1FA3794C00D3BFB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE09CB2B1FA3794C00D3BFB1 /* MainMenu.xib */; };
@@ -40,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B27EB33435C0E8BE08CE6DB /* Pods_TemposBotMenubarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemposBotMenubarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BE5CA8A7D206960B878286D /* Pods-TemposBotMenubarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemposBotMenubarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemposBotMenubarUITests/Pods-TemposBotMenubarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8328C71FA4DA5257F26B6519 /* Pods-TemposBotMenubar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemposBotMenubar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemposBotMenubar/Pods-TemposBotMenubar.debug.xcconfig"; sourceTree = "<group>"; };
+		8348AC645591492CA9820414 /* Pods-TemposBotMenubarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemposBotMenubarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TemposBotMenubarUITests/Pods-TemposBotMenubarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A814976BAFD9707AEE51DFC3 /* Pods-TemposBotMenubar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemposBotMenubar.release.xcconfig"; path = "Pods/Target Support Files/Pods-TemposBotMenubar/Pods-TemposBotMenubar.release.xcconfig"; sourceTree = "<group>"; };
 		AE09CB241FA3794C00D3BFB1 /* TemposBotMenubar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemposBotMenubar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE09CB271FA3794C00D3BFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE09CB291FA3794C00D3BFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 		AE74B2881FACC1830055F2DE /* Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		AE8539621FAC7F680037A857 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		AED33A621FAE54D600E9E005 /* CommandLineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandLineController.swift; sourceTree = "<group>"; };
+		B767364DF32C93377BCDF1ED /* Pods_TemposBotMenubarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemposBotMenubarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60C43D3ABA0D3AB98CCAFCF /* Pods-TemposBotMenubarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemposBotMenubarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TemposBotMenubarTests/Pods-TemposBotMenubarTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE2914A9D9759F2CD14C5368 /* Pods_TemposBotMenubar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemposBotMenubar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5FE9B8293DB39F846C2AC64 /* Pods-TemposBotMenubarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemposBotMenubarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TemposBotMenubarTests/Pods-TemposBotMenubarTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EA082B3123BE574E0D65505 /* Pods_TemposBotMenubar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AD9E681C6A463E267011B14 /* Pods_TemposBotMenubarTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,12 +95,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48ABF5A2CC47E4F52C5B6AD1 /* Pods_TemposBotMenubarUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67FA068BD02A2C2FB1B6C451 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE2914A9D9759F2CD14C5368 /* Pods_TemposBotMenubar.framework */,
+				3B27EB33435C0E8BE08CE6DB /* Pods_TemposBotMenubarTests.framework */,
+				B767364DF32C93377BCDF1ED /* Pods_TemposBotMenubarUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E92F8DAA020B4FA2EFD6DE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8328C71FA4DA5257F26B6519 /* Pods-TemposBotMenubar.debug.xcconfig */,
+				A814976BAFD9707AEE51DFC3 /* Pods-TemposBotMenubar.release.xcconfig */,
+				F5FE9B8293DB39F846C2AC64 /* Pods-TemposBotMenubarTests.debug.xcconfig */,
+				C60C43D3ABA0D3AB98CCAFCF /* Pods-TemposBotMenubarTests.release.xcconfig */,
+				5BE5CA8A7D206960B878286D /* Pods-TemposBotMenubarUITests.debug.xcconfig */,
+				8348AC645591492CA9820414 /* Pods-TemposBotMenubarUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AE09CB1B1FA3794C00D3BFB1 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +132,8 @@
 				AE09CB371FA3794C00D3BFB1 /* TemposBotMenubarTests */,
 				AE09CB421FA3794C00D3BFB1 /* TemposBotMenubarUITests */,
 				AE09CB251FA3794C00D3BFB1 /* Products */,
+				9E92F8DAA020B4FA2EFD6DE2 /* Pods */,
+				67FA068BD02A2C2FB1B6C451 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE09CB481FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "TemposBotMenubar" */;
 			buildPhases = (
+				197B1E09336368D6822D2959 /* [CP] Check Pods Manifest.lock */,
 				AE09CB201FA3794C00D3BFB1 /* Sources */,
 				AE09CB211FA3794C00D3BFB1 /* Frameworks */,
 				AE09CB221FA3794C00D3BFB1 /* Resources */,
+				13EA4C6495869E811026080A /* [CP] Embed Pods Frameworks */,
+				BE1686F3EAF20F2681765638 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE09CB4B1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "TemposBotMenubarTests" */;
 			buildPhases = (
+				FA1B7657B15D2CCB4E3E45DF /* [CP] Check Pods Manifest.lock */,
 				AE09CB301FA3794C00D3BFB1 /* Sources */,
 				AE09CB311FA3794C00D3BFB1 /* Frameworks */,
 				AE09CB321FA3794C00D3BFB1 /* Resources */,
+				C9E232449A71A05D2E187279 /* [CP] Embed Pods Frameworks */,
+				2263A8C25D6DA757F30C5D91 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,9 +249,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE09CB4E1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "TemposBotMenubarUITests" */;
 			buildPhases = (
+				8E430A264EE838B09CFFACD5 /* [CP] Check Pods Manifest.lock */,
 				AE09CB3B1FA3794C00D3BFB1 /* Sources */,
 				AE09CB3C1FA3794C00D3BFB1 /* Frameworks */,
 				AE09CB3D1FA3794C00D3BFB1 /* Resources */,
+				138BF3B092EFE982603C8A70 /* [CP] Embed Pods Frameworks */,
+				6769696E26AC644A523A5C1E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,6 +338,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		138BF3B092EFE982603C8A70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemposBotMenubarUITests/Pods-TemposBotMenubarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		13EA4C6495869E811026080A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TemposBotMenubar/Pods-TemposBotMenubar-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FileKit/FileKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FileKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemposBotMenubar/Pods-TemposBotMenubar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		197B1E09336368D6822D2959 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TemposBotMenubar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2263A8C25D6DA757F30C5D91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemposBotMenubarTests/Pods-TemposBotMenubarTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6769696E26AC644A523A5C1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemposBotMenubarUITests/Pods-TemposBotMenubarUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E430A264EE838B09CFFACD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TemposBotMenubarUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE1686F3EAF20F2681765638 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemposBotMenubar/Pods-TemposBotMenubar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9E232449A71A05D2E187279 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TemposBotMenubarTests/Pods-TemposBotMenubarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA1B7657B15D2CCB4E3E45DF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TemposBotMenubarTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AE09CB201FA3794C00D3BFB1 /* Sources */ = {
@@ -457,6 +656,7 @@
 		};
 		AE09CB491FA3794C00D3BFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8328C71FA4DA5257F26B6519 /* Pods-TemposBotMenubar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TemposBotMenubar/TemposBotMenubar.entitlements;
@@ -472,6 +672,7 @@
 		};
 		AE09CB4A1FA3794C00D3BFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A814976BAFD9707AEE51DFC3 /* Pods-TemposBotMenubar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TemposBotMenubar/TemposBotMenubar.entitlements;
@@ -487,6 +688,7 @@
 		};
 		AE09CB4C1FA3794C00D3BFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5FE9B8293DB39F846C2AC64 /* Pods-TemposBotMenubarTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +705,7 @@
 		};
 		AE09CB4D1FA3794C00D3BFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C60C43D3ABA0D3AB98CCAFCF /* Pods-TemposBotMenubarTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +722,7 @@
 		};
 		AE09CB4F1FA3794C00D3BFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE5CA8A7D206960B878286D /* Pods-TemposBotMenubarUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +738,7 @@
 		};
 		AE09CB501FA3794C00D3BFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8348AC645591492CA9820414 /* Pods-TemposBotMenubarUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
