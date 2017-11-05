@@ -1,6 +1,0 @@
-framework module Pods_TemposBotMenubar {
-  umbrella header "Pods-TemposBotMenubar-umbrella.h"
-
-  export *
-  module * { export * }
-}
