@@ -76,12 +76,10 @@ class ColoredButton: NSButton {
   override func mouseEntered(with event: NSEvent) {
     isHovered = true
     needsDisplay = true
-    NSCursor.pointingHand.set()
   }
 
   override func mouseExited(with event: NSEvent) {
     isHovered = false
     needsDisplay = true
-    NSCursor.arrow.set()
   }
 }
