@@ -71,10 +71,10 @@ class Tempos {
     let file = FileHandle(forReadingAtPath: projectPath(project))
     let data = file?.readDataToEndOfFile()
 
-    if data == nil { return "" }
+    if data == nil { return " --:-- " }
 
     let commands = String(data: data!, encoding: .utf8)!
-    if commands.isEmpty { return "" }
+    if commands.isEmpty { return " --:-- " }
 
     var seconds = commands
       .split(separator: "\n")
@@ -108,7 +108,7 @@ class Tempos {
     formatter.dateFormat = "HH:mm"
     formatter.timeZone = TimeZone(abbreviation: "UTC")
 
-    return " Today: \(formatter.string(from: spentDate))"
+    return formatter.string(from: spentDate)
   }
 
   static func start(_ project: String) {

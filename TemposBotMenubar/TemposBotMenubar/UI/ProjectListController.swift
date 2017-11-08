@@ -11,36 +11,32 @@ import Cocoa
 // https://stackoverflow.com/questions/34124228/initialize-a-subclass-of-nsviewcontroller-without-a-xib-file
 class ProjectListController: NSViewController {
 
-  let TABLE_WIDTH = 400
-  let ROW_HEIGHT = 31
-  let COLUMN_WIDTHS = [
+  let ROW_HEIGHT = 30
+  var DEFAULT_COLUMN_WIDTHS = [
     "project": CGFloat(180),
     "actions": CGFloat(60),
-    "command": CGFloat(160),
-    "report": CGFloat(160)
+    "report": CGFloat(85),
   ]
   let LOM_RED = NSColor(red: 0.75, green: 0.15, blue: 0.09, alpha: 1.0) // #BF2718, rgb(191,39,24)
   let LOM_RED_HL = NSColor(red: 0.92, green: 0.3, blue: 0.36, alpha: 1.0) // #EB4D5C, rgb(235,77,92)
 
-  var refreshButton: NSButton?
   var tableView: NSTableView?
+  var projectCol: NSTableColumn?
+  var actionsCol: NSTableColumn?
+  var reportCol: NSTableColumn?
   var projects: Array<String>?
 
   override func loadView() {
-    print("ProjectList loadView()")
-
-    projects = Tempos.projects()
-
-    view = NSView(frame: NSRect(x: 0, y: 0, width: TABLE_WIDTH + 46, height: ((ROW_HEIGHT + 2) * projects!.count)))
+    view = NSView(frame: NSRect(x: 0, y: 0, width: tableWidth(), height: ((ROW_HEIGHT + 2) * projects!.count)))
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    print("ProjectsListController viewDidLoad")
 
-    refreshButton = NSButton(title: "Start", target: self, action: #selector(self.handleStart))
-
-    tableView = NSTableView(frame: NSRect(x: 18, y: 0, width: TABLE_WIDTH, height: ROW_HEIGHT * projects!.count))
+    projects = Tempos.projects()
+    
+    tableView = NSTableView(frame: NSRect(x: 18, y: 0, width: 0, height: 0))
+    tableView!.headerView = nil
     tableView!.allowsColumnResizing = false
     tableView!.columnAutoresizingStyle = .noColumnAutoresizing
     tableView!.rowHeight = CGFloat(ROW_HEIGHT)
@@ -50,43 +46,58 @@ class ProjectListController: NSViewController {
     tableView!.delegate = self
     tableView!.dataSource = self
 
-    tableView!.headerView = nil
+    projectCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "project"))
+    actionsCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "actions"))
+    reportCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "report"))
+    calculateAndSetColumnWidths()
 
-    let projectCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "project"))
-    projectCol.minWidth = COLUMN_WIDTHS["project"]!
-
-    let actionsCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "actions"))
-    actionsCol.minWidth = COLUMN_WIDTHS["actions"]!
-    actionsCol.maxWidth = COLUMN_WIDTHS["actions"]!
-
-    // let commandCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "command"))
-    // commandCol.minWidth = COLUMN_WIDTHS["command"]!
-
-    let reportCol = NSTableColumn(identifier: NSUserInterfaceItemIdentifier(rawValue: "report"))
-    reportCol.minWidth = COLUMN_WIDTHS["report"]!
-
-    tableView!.addTableColumn(projectCol)
-    tableView!.addTableColumn(actionsCol)
-    // tableView!.addTableColumn(commandCol)
-    tableView!.addTableColumn(reportCol)
+    tableView!.addTableColumn(projectCol!)
+    tableView!.addTableColumn(actionsCol!)
+    tableView!.addTableColumn(reportCol!)
 
     self.view.addSubview(tableView!)
   }
 
   func refresh() {
     projects = Tempos.projects()
-    view.frame = NSRect(x: 0, y: 0, width: TABLE_WIDTH + 46, height: ((ROW_HEIGHT + 2) * projects!.count))
+    calculateAndSetColumnWidths()
+    view.frame = NSRect(x: 0, y: 0, width: tableWidth(), height: ((ROW_HEIGHT + 2) * projects!.count))
     tableView!.reloadData()
   }
 
   @objc func handleStart(sender: NSButton) {
     Tempos.start(projects![sender.tag])
-    tableView!.reloadData()
+    refresh()
   }
 
   @objc func handleStop(sender: NSButton) {
     Tempos.stop(projects![sender.tag])
-    tableView!.reloadData()
+    refresh()
+  }
+
+  private func tableWidth() -> Int {
+    let width = Array(DEFAULT_COLUMN_WIDTHS.values).reduce(0, { total, width in total + width })
+    return Int(width)
+  }
+
+  private func calculateAndSetColumnWidths() {
+    // re-calculate width of first column as the
+    // width of the largest project name + 10px padding
+    var maxWidth = CGFloat(0)
+    projects!.forEach {
+      let width = NSTextField(labelWithString: $0).bounds.width
+      if width > maxWidth { maxWidth = width }
+    }
+    DEFAULT_COLUMN_WIDTHS["project"] = maxWidth + 10
+
+    projectCol?.minWidth = DEFAULT_COLUMN_WIDTHS["project"]!
+    projectCol?.maxWidth = DEFAULT_COLUMN_WIDTHS["project"]!
+
+    actionsCol?.minWidth = DEFAULT_COLUMN_WIDTHS["actions"]!
+    actionsCol?.maxWidth = DEFAULT_COLUMN_WIDTHS["actions"]!
+
+    reportCol?.minWidth = DEFAULT_COLUMN_WIDTHS["report"]!
+    reportCol?.maxWidth = DEFAULT_COLUMN_WIDTHS["report"]!
   }
 }
 
@@ -140,10 +151,9 @@ extension ProjectListController: NSTableViewDelegate, NSTableViewDataSource {
 
       switch tableColumn!.identifier.rawValue {
       case "project":
-        cellView.frame = NSRect(x: 0, y: 0, width: Int(COLUMN_WIDTHS["project"]!), height: ROW_HEIGHT)
+        cellView.frame = NSRect(x: 0, y: 0, width: Int(DEFAULT_COLUMN_WIDTHS["project"]!), height: ROW_HEIGHT)
 
         let label = NSTextField(labelWithString: projects![row])
-        label.autoresizingMask = [.minXMargin, .maxXMargin, .minYMargin, .maxYMargin]
         label.setFrameOrigin(NSPoint(
           x: 0,
           y: (cellView.bounds.height - label.bounds.height) / 2
@@ -158,18 +168,18 @@ extension ProjectListController: NSTableViewDelegate, NSTableViewDataSource {
           target: self,
           action: status == "start" ? #selector(self.handleStop) : #selector(self.handleStart)
         )
-        button.frame = NSRect(x: 2, y: 0, width: Int(COLUMN_WIDTHS["actions"]!) - 4, height: 22)
+        button.frame = NSRect(x: 2, y: 0, width: Int(DEFAULT_COLUMN_WIDTHS["actions"]!) - 4, height: 22)
         if (status == "start") {
           button.backgroundColor = LOM_RED
           button.backgroundColorHover = LOM_RED_HL
         }
+        button.bezelStyle = .inline
         button.tag = row
 
-        button.bezelStyle = .inline
         button.autoresizingMask = [.minXMargin, .maxXMargin, .minYMargin, .maxYMargin]
         button.setFrameOrigin(NSPoint(
           x: (cellView.bounds.width - button.bounds.width) / 2,
-          y: (cellView.bounds.height - button.bounds.height) / 2 + 4
+          y: (cellView.bounds.height - button.bounds.height) / 2
         ))
 
         cellView.addSubview(button)
@@ -195,12 +205,11 @@ extension ProjectListController: NSTableViewDelegate, NSTableViewDataSource {
 
       //   break
       case "report":
-        cellView.frame = NSRect(x: 0, y: 0, width: Int(COLUMN_WIDTHS["report"]!), height: ROW_HEIGHT)
+        cellView.frame = NSRect(x: 0, y: 0, width: Int(DEFAULT_COLUMN_WIDTHS["report"]!), height: ROW_HEIGHT)
 
         let report = NSTextField(labelWithString: Tempos.report(projects![row]))
-        report.autoresizingMask = [.minXMargin, .maxXMargin, .minYMargin, .maxYMargin]
         report.setFrameOrigin(NSPoint(
-          x: 0,
+          x: 10,
           y: (cellView.bounds.height - report.bounds.height) / 2
         ))
         cellView.addSubview(report)
