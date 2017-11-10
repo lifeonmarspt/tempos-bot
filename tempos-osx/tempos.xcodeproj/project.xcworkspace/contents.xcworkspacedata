@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TemposBotMenubar.xcodeproj">
+      location = "self:/Users/jgradim/work/lom/tempos-bot/tempos-osx/tempos.xcodeproj">
    </FileRef>
 </Workspace>

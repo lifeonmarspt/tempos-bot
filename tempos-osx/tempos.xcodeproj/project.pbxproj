@@ -10,8 +10,6 @@
 		AE09CB281FA3794C00D3BFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB271FA3794C00D3BFB1 /* AppDelegate.swift */; };
 		AE09CB2A1FA3794C00D3BFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE09CB291FA3794C00D3BFB1 /* Assets.xcassets */; };
 		AE09CB2D1FA3794C00D3BFB1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE09CB2B1FA3794C00D3BFB1 /* MainMenu.xib */; };
-		AE09CB391FA3794C00D3BFB1 /* TemposBotMenubarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB381FA3794C00D3BFB1 /* TemposBotMenubarTests.swift */; };
-		AE09CB441FA3794C00D3BFB1 /* TemposBotMenubarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB431FA3794C00D3BFB1 /* TemposBotMenubarUITests.swift */; };
 		AE09CB521FA37FD400D3BFB1 /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB511FA37FD400D3BFB1 /* MainMenuController.swift */; };
 		AE09CB571FA38AA700D3BFB1 /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE09CB551FA38AA700D3BFB1 /* PreferencesWindowController.swift */; };
 		AE09CB581FA38AA700D3BFB1 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */; };
@@ -41,18 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AE09CB241FA3794C00D3BFB1 /* TemposBotMenubar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemposBotMenubar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE09CB241FA3794C00D3BFB1 /* tempos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tempos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE09CB271FA3794C00D3BFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE09CB291FA3794C00D3BFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE09CB2C1FA3794C00D3BFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		AE09CB2E1FA3794C00D3BFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE09CB2F1FA3794C00D3BFB1 /* TemposBotMenubar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TemposBotMenubar.entitlements; sourceTree = "<group>"; };
-		AE09CB341FA3794C00D3BFB1 /* TemposBotMenubarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemposBotMenubarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE09CB381FA3794C00D3BFB1 /* TemposBotMenubarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemposBotMenubarTests.swift; sourceTree = "<group>"; };
-		AE09CB3A1FA3794C00D3BFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE09CB3F1FA3794C00D3BFB1 /* TemposBotMenubarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemposBotMenubarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE09CB431FA3794C00D3BFB1 /* TemposBotMenubarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemposBotMenubarUITests.swift; sourceTree = "<group>"; };
-		AE09CB451FA3794C00D3BFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE09CB2F1FA3794C00D3BFB1 /* tempos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tempos.entitlements; sourceTree = "<group>"; };
+		AE09CB341FA3794C00D3BFB1 /* temposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = temposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE09CB3F1FA3794C00D3BFB1 /* temposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = temposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE09CB511FA37FD400D3BFB1 /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
 		AE09CB551FA38AA700D3BFB1 /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
 		AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
@@ -92,9 +86,7 @@
 		AE09CB1B1FA3794C00D3BFB1 = {
 			isa = PBXGroup;
 			children = (
-				AE09CB261FA3794C00D3BFB1 /* TemposBotMenubar */,
-				AE09CB371FA3794C00D3BFB1 /* TemposBotMenubarTests */,
-				AE09CB421FA3794C00D3BFB1 /* TemposBotMenubarUITests */,
+				AE09CB261FA3794C00D3BFB1 /* tempos */,
 				AE09CB251FA3794C00D3BFB1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,14 +94,14 @@
 		AE09CB251FA3794C00D3BFB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AE09CB241FA3794C00D3BFB1 /* TemposBotMenubar.app */,
-				AE09CB341FA3794C00D3BFB1 /* TemposBotMenubarTests.xctest */,
-				AE09CB3F1FA3794C00D3BFB1 /* TemposBotMenubarUITests.xctest */,
+				AE09CB241FA3794C00D3BFB1 /* tempos.app */,
+				AE09CB341FA3794C00D3BFB1 /* temposTests.xctest */,
+				AE09CB3F1FA3794C00D3BFB1 /* temposUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AE09CB261FA3794C00D3BFB1 /* TemposBotMenubar */ = {
+		AE09CB261FA3794C00D3BFB1 /* tempos */ = {
 			isa = PBXGroup;
 			children = (
 				AE74B2871FACC1740055F2DE /* Lib */,
@@ -121,27 +113,9 @@
 				AE09CB551FA38AA700D3BFB1 /* PreferencesWindowController.swift */,
 				AE09CB291FA3794C00D3BFB1 /* Assets.xcassets */,
 				AE09CB2E1FA3794C00D3BFB1 /* Info.plist */,
-				AE09CB2F1FA3794C00D3BFB1 /* TemposBotMenubar.entitlements */,
+				AE09CB2F1FA3794C00D3BFB1 /* tempos.entitlements */,
 			);
-			path = TemposBotMenubar;
-			sourceTree = "<group>";
-		};
-		AE09CB371FA3794C00D3BFB1 /* TemposBotMenubarTests */ = {
-			isa = PBXGroup;
-			children = (
-				AE09CB381FA3794C00D3BFB1 /* TemposBotMenubarTests.swift */,
-				AE09CB3A1FA3794C00D3BFB1 /* Info.plist */,
-			);
-			path = TemposBotMenubarTests;
-			sourceTree = "<group>";
-		};
-		AE09CB421FA3794C00D3BFB1 /* TemposBotMenubarUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AE09CB431FA3794C00D3BFB1 /* TemposBotMenubarUITests.swift */,
-				AE09CB451FA3794C00D3BFB1 /* Info.plist */,
-			);
-			path = TemposBotMenubarUITests;
+			path = tempos;
 			sourceTree = "<group>";
 		};
 		AE74B2871FACC1740055F2DE /* Lib */ = {
@@ -167,9 +141,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AE09CB231FA3794C00D3BFB1 /* TemposBotMenubar */ = {
+		AE09CB231FA3794C00D3BFB1 /* tempos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE09CB481FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "TemposBotMenubar" */;
+			buildConfigurationList = AE09CB481FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "tempos" */;
 			buildPhases = (
 				AE09CB201FA3794C00D3BFB1 /* Sources */,
 				AE09CB211FA3794C00D3BFB1 /* Frameworks */,
@@ -179,14 +153,14 @@
 			);
 			dependencies = (
 			);
-			name = TemposBotMenubar;
+			name = tempos;
 			productName = TemposBotMenubar;
-			productReference = AE09CB241FA3794C00D3BFB1 /* TemposBotMenubar.app */;
+			productReference = AE09CB241FA3794C00D3BFB1 /* tempos.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AE09CB331FA3794C00D3BFB1 /* TemposBotMenubarTests */ = {
+		AE09CB331FA3794C00D3BFB1 /* temposTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE09CB4B1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "TemposBotMenubarTests" */;
+			buildConfigurationList = AE09CB4B1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "temposTests" */;
 			buildPhases = (
 				AE09CB301FA3794C00D3BFB1 /* Sources */,
 				AE09CB311FA3794C00D3BFB1 /* Frameworks */,
@@ -197,14 +171,14 @@
 			dependencies = (
 				AE09CB361FA3794C00D3BFB1 /* PBXTargetDependency */,
 			);
-			name = TemposBotMenubarTests;
+			name = temposTests;
 			productName = TemposBotMenubarTests;
-			productReference = AE09CB341FA3794C00D3BFB1 /* TemposBotMenubarTests.xctest */;
+			productReference = AE09CB341FA3794C00D3BFB1 /* temposTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AE09CB3E1FA3794C00D3BFB1 /* TemposBotMenubarUITests */ = {
+		AE09CB3E1FA3794C00D3BFB1 /* temposUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AE09CB4E1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "TemposBotMenubarUITests" */;
+			buildConfigurationList = AE09CB4E1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "temposUITests" */;
 			buildPhases = (
 				AE09CB3B1FA3794C00D3BFB1 /* Sources */,
 				AE09CB3C1FA3794C00D3BFB1 /* Frameworks */,
@@ -215,9 +189,9 @@
 			dependencies = (
 				AE09CB411FA3794C00D3BFB1 /* PBXTargetDependency */,
 			);
-			name = TemposBotMenubarUITests;
+			name = temposUITests;
 			productName = TemposBotMenubarUITests;
-			productReference = AE09CB3F1FA3794C00D3BFB1 /* TemposBotMenubarUITests.xctest */;
+			productReference = AE09CB3F1FA3794C00D3BFB1 /* temposUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +220,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AE09CB1F1FA3794C00D3BFB1 /* Build configuration list for PBXProject "TemposBotMenubar" */;
+			buildConfigurationList = AE09CB1F1FA3794C00D3BFB1 /* Build configuration list for PBXProject "tempos" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -259,9 +233,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AE09CB231FA3794C00D3BFB1 /* TemposBotMenubar */,
-				AE09CB331FA3794C00D3BFB1 /* TemposBotMenubarTests */,
-				AE09CB3E1FA3794C00D3BFB1 /* TemposBotMenubarUITests */,
+				AE09CB231FA3794C00D3BFB1 /* tempos */,
+				AE09CB331FA3794C00D3BFB1 /* temposTests */,
+				AE09CB3E1FA3794C00D3BFB1 /* temposUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE09CB391FA3794C00D3BFB1 /* TemposBotMenubarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +295,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE09CB441FA3794C00D3BFB1 /* TemposBotMenubarUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +303,12 @@
 /* Begin PBXTargetDependency section */
 		AE09CB361FA3794C00D3BFB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE09CB231FA3794C00D3BFB1 /* TemposBotMenubar */;
+			target = AE09CB231FA3794C00D3BFB1 /* tempos */;
 			targetProxy = AE09CB351FA3794C00D3BFB1 /* PBXContainerItemProxy */;
 		};
 		AE09CB411FA3794C00D3BFB1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AE09CB231FA3794C00D3BFB1 /* TemposBotMenubar */;
+			target = AE09CB231FA3794C00D3BFB1 /* tempos */;
 			targetProxy = AE09CB401FA3794C00D3BFB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -463,12 +435,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TemposBotMenubar/TemposBotMenubar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = tempos/tempos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TemposBotMenubar/Info.plist;
+				INFOPLIST_FILE = tempos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lifeonmars.TemposBotMenubar;
+				PRODUCT_BUNDLE_IDENTIFIER = pt.lifeonmars.tempos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -478,12 +450,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TemposBotMenubar/TemposBotMenubar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = tempos/tempos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TemposBotMenubar/Info.plist;
+				INFOPLIST_FILE = tempos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lifeonmars.TemposBotMenubar;
+				PRODUCT_BUNDLE_IDENTIFIER = pt.lifeonmars.tempos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -501,7 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lifeonmars.TemposBotMenubarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TemposBotMenubar.app/Contents/MacOS/TemposBotMenubar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tempos.app/Contents/MacOS/tempos";
 			};
 			name = Debug;
 		};
@@ -517,7 +489,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lifeonmars.TemposBotMenubarTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TemposBotMenubar.app/Contents/MacOS/TemposBotMenubar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tempos.app/Contents/MacOS/tempos";
 			};
 			name = Release;
 		};
@@ -554,7 +526,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AE09CB1F1FA3794C00D3BFB1 /* Build configuration list for PBXProject "TemposBotMenubar" */ = {
+		AE09CB1F1FA3794C00D3BFB1 /* Build configuration list for PBXProject "tempos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE09CB461FA3794C00D3BFB1 /* Debug */,
@@ -563,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE09CB481FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "TemposBotMenubar" */ = {
+		AE09CB481FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "tempos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE09CB491FA3794C00D3BFB1 /* Debug */,
@@ -572,7 +544,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE09CB4B1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "TemposBotMenubarTests" */ = {
+		AE09CB4B1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "temposTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE09CB4C1FA3794C00D3BFB1 /* Debug */,
@@ -581,7 +553,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AE09CB4E1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "TemposBotMenubarUITests" */ = {
+		AE09CB4E1FA3794C00D3BFB1 /* Build configuration list for PBXNativeTarget "temposUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AE09CB4F1FA3794C00D3BFB1 /* Debug */,
