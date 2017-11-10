@@ -22,6 +22,25 @@ class Git {
     return task.terminationStatus == 0
   }
 
+  static func repoRoot(path: String) -> String {
+    let task = Process()
+    task.launchPath = "/usr/bin/git"
+    task.currentDirectoryPath = path
+    task.arguments = ["rev-parse", "--show-toplevel"]
+
+    let pipe = Pipe()
+    task.standardOutput = pipe
+    task.launch()
+
+    let handle = pipe.fileHandleForReading
+    let data = handle.readDataToEndOfFile()
+
+    task.waitUntilExit()
+
+    let root = String(data: data, encoding: .utf8)!
+    return root.trimmingCharacters(in: .whitespacesAndNewlines)
+  }
+
   static func commiter() -> String {
     let task = prepareGitTask()
     task.arguments = ["config", "user.email"]

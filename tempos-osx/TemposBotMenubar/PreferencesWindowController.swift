@@ -60,8 +60,7 @@ class PreferencesWindowController: NSWindowController, NSWindowDelegate {
           showAlert(title: "Invalid git repository", message: "Please select a valid git repository")
         }
         else {
-          apiKeyTextField.stringValue = url.path
-          NSLog("dialog.url.path: %@", url.path)
+          apiKeyTextField.stringValue = Git.repoRoot(path: url.path)
         }
       }
     }
