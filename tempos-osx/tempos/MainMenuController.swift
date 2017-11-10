@@ -35,11 +35,14 @@ class MainMenuController: NSObject {
     
     let alert = NSAlert()
     alert.messageText = "Running timers"
-    alert.informativeText = "You still have timers running. Do you wish to stop them before quitting?"
+    alert.informativeText = "You still have running timers. Do you wish to stop them before quitting?"
     alert.addButton(withTitle: "Stop timers and quit")
     alert.addButton(withTitle: "Quit anyway")
+    alert.addButton(withTitle: "Cancel")
     let response = alert.runModal()
     
+    if response == .alertThirdButtonReturn { return }
+
     if response == .alertFirstButtonReturn {
       Tempos.stopAll()
     }
