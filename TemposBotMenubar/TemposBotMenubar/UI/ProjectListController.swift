@@ -10,21 +10,23 @@ import Cocoa
 
 // https://stackoverflow.com/questions/34124228/initialize-a-subclass-of-nsviewcontroller-without-a-xib-file
 class ProjectListController: NSViewController {
-
+  
+  var mainMenu: MainMenuController?
   let ROW_HEIGHT = 30
   var DEFAULT_COLUMN_WIDTHS = [
     "project": CGFloat(180),
     "actions": CGFloat(60),
     "report": CGFloat(85),
   ]
-  let LOM_RED = NSColor(red: 0.75, green: 0.15, blue: 0.09, alpha: 1.0) // #BF2718, rgb(191,39,24)
-  let LOM_RED_HL = NSColor(red: 0.92, green: 0.3, blue: 0.36, alpha: 1.0) // #EB4D5C, rgb(235,77,92)
+  
+  private let LOM_RED = NSColor(red: 0.91, green: 0.31, blue: 0.26, alpha: 1.0) // #BF2718, rgb(191,39,24)
+  private let LOM_RED_HL = NSColor(red: 0.95, green: 0.35, blue: 0.31, alpha: 1.0) // #EB4D5C, rgb(235,77,92)
 
-  var tableView: NSTableView?
-  var projectCol: NSTableColumn?
-  var actionsCol: NSTableColumn?
-  var reportCol: NSTableColumn?
-  var projects: Array<String>?
+  private var tableView: NSTableView?
+  private var projectCol: NSTableColumn?
+  private var actionsCol: NSTableColumn?
+  private var reportCol: NSTableColumn?
+  private var projects: Array<String>?
 
   override func loadView() {
     view = NSView(frame: NSRect(x: 0, y: 0, width: tableWidth(), height: ((ROW_HEIGHT + 2) * projects!.count)))
@@ -63,6 +65,7 @@ class ProjectListController: NSViewController {
     calculateAndSetColumnWidths()
     view.frame = NSRect(x: 0, y: 0, width: tableWidth(), height: ((ROW_HEIGHT + 2) * projects!.count))
     tableView!.reloadData()
+    mainMenu?.setActive(Tempos.globalStatus() == "start")
   }
 
   @objc func handleStart(sender: NSButton) {

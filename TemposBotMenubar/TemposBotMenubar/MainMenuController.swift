@@ -9,9 +9,11 @@
 import Cocoa
 
 class MainMenuController: NSObject {
-  var statusItem: NSStatusItem!
-  var preferencesWindow: PreferencesWindowController!
-  var projectsListController: ProjectListController!
+  private var statusItem: NSStatusItem!
+  private var preferencesWindow: PreferencesWindowController!
+  private var projectsListController: ProjectListController!
+  
+  private var isActive: Bool = false
 
   @IBOutlet var statusMenu: NSMenu!
   @IBOutlet weak var currentUserItem: NSMenuItem!
@@ -26,12 +28,27 @@ class MainMenuController: NSObject {
   }
 
   @IBAction func quitClicked(sender: NSMenuItem) {
-    NSApplication.shared.terminate(self)
+    if (Tempos.globalStatus() == "stop") {
+      NSApplication.shared.terminate(self)
+      return
+    }
+    
+    let alert = NSAlert()
+    alert.messageText = "Running timers"
+    alert.informativeText = "You still have timers running. Do you wish to stop them before quitting?"
+    alert.addButton(withTitle: "Stop timers and quit")
+    alert.addButton(withTitle: "Quit anyway")
+    let response = alert.runModal()
+    
+    if response == .alertFirstButtonReturn {
+      Tempos.stopAll()
+    }
+    
+    NSApplication.shared.terminate("self")
   }
 
   override func awakeFromNib() {
     statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    statusItem.title = "⏱🤖"
 
     statusMenu.delegate = self
     statusItem.menu = statusMenu
@@ -40,8 +57,17 @@ class MainMenuController: NSObject {
     preferencesWindow.delegate = self
 
     projectsListController = ProjectListController()
+    projectsListController.mainMenu = self
 
     setupMenuItems()
+
+    setActive(Tempos.globalStatus() == "start")
+  }
+
+  func setActive(_ active: Bool) {
+    self.isActive = active
+    let icon = active ? "menubar-active" : "menubar-inactive"
+    statusItem.image = NSImage(named: NSImage.Name(icon))
   }
 
   private func setupMenuItems() {

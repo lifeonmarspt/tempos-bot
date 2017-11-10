@@ -31,6 +31,10 @@ class Tempos {
     return paths
   }
 
+  static func createProject(path: String) -> Bool {
+    return false
+  }
+
   static func isValidCommand(command: String) -> Bool {
     let regex = try! NSRegularExpression(
       pattern: "^(add|remove)\\s+\\d+(h|h\\d+(m|min)|m|min)$",
@@ -65,6 +69,12 @@ class Tempos {
       FileManager.default.createFile(atPath: path, contents: nil)
       return "stop"
     }
+  }
+
+  static func globalStatus() -> String {
+    var ret = "stop"
+    projects().forEach{ if status($0) == "start" { ret = "start" } }
+    return ret
   }
 
   static func report(_ project: String) -> String {
@@ -133,6 +143,10 @@ class Tempos {
     Git.add(path: projectPath(project))
     Git.commit(message: log)
     Git.push()
+  }
+
+  static func stopAll() {
+    projects().forEach{ stop($0) }
   }
 
   private static func writeCommand(_ project: String, command: String) -> String {
