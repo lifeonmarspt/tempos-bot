@@ -18,6 +18,28 @@ class MainMenuController: NSObject {
   @IBOutlet var statusMenu: NSMenu!
   @IBOutlet weak var currentUserItem: NSMenuItem!
   @IBOutlet weak var projectsListItem: NSMenuItem!
+  @IBOutlet weak var newProjectSeparator: NSMenuItem!
+  @IBOutlet weak var newProjectItem: NSMenuItem!
+
+  @IBAction func newProjectClicked(sender: NSMenuItem) {
+    let form = NSAlert()
+    form.messageText = "Add new project"
+    form.addButton(withTitle: "Add Project")
+    form.addButton(withTitle: "Cancel")
+
+    let projectInput = NSTextField(frame: NSRect(x: 0, y: 0, width: 300, height: 24))
+    projectInput.placeholderString = "client/project"
+
+    form.accessoryView = projectInput
+    form.window.initialFirstResponder = projectInput
+
+    let response = form.runModal()
+
+    if response == .alertFirstButtonReturn {
+      let projectCreated = Tempos.createProject(path: projectInput.stringValue)
+      print("projectCreated: \(projectCreated)")
+    }
+  }
 
   @IBAction func refreshClicked(sender: NSMenuItem) {
     projectsListController.refresh()
@@ -39,13 +61,10 @@ class MainMenuController: NSObject {
     alert.addButton(withTitle: "Stop timers and quit")
     alert.addButton(withTitle: "Quit anyway")
     alert.addButton(withTitle: "Cancel")
-    let response = alert.runModal()
     
+    let response = alert.runModal()
     if response == .alertThirdButtonReturn { return }
-
-    if response == .alertFirstButtonReturn {
-      Tempos.stopAll()
-    }
+    if response == .alertFirstButtonReturn { Tempos.stopAll() }
     
     NSApplication.shared.terminate("self")
   }
@@ -79,6 +98,8 @@ class MainMenuController: NSObject {
 
     // default values
     currentUserItem.title = "Please set a valid repository in preferences"
+    newProjectSeparator.isHidden = true
+    newProjectItem.isHidden = true
     projectsListController.refresh()
 
     if let repo = defaultRepo {
@@ -88,6 +109,9 @@ class MainMenuController: NSObject {
 
     currentUserItem.title = Git.commiter()
     projectsListItem.view = projectsListController.view
+
+    newProjectSeparator.isHidden = false
+    newProjectItem.isHidden = false
   }
 }
 

@@ -17,7 +17,8 @@ class PreferencesWindowController: NSWindowController, NSWindowDelegate {
   var delegate: PreferencesWindowDelegate?
 
   @IBOutlet weak var apiKeyTextField: TextField!
-
+  @IBOutlet weak var optOnlyWorkingProjects: NSButton!
+  
   override var windowNibName: NSNib.Name? {
     return NSNib.Name("PreferencesWindow")
   }

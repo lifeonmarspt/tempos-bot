@@ -12,11 +12,13 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="TemposBotMenubar" customModuleProvider="target"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="tempos" customModuleProvider="target"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="SgW-QN-cNc" userLabel="StatusMenuController" customClass="MainMenuController" customModule="TemposBotMenubar" customModuleProvider="target">
+        <customObject id="SgW-QN-cNc" userLabel="StatusMenuController" customClass="MainMenuController" customModule="tempos" customModuleProvider="target">
             <connections>
                 <outlet property="currentUserItem" destination="Qz8-Iv-Guh" id="cqs-Dv-upd"/>
+                <outlet property="newProjectItem" destination="1X0-2L-IiF" id="efc-FG-fJ1"/>
+                <outlet property="newProjectSeparator" destination="ucW-BW-oE9" id="HPw-3h-oxz"/>
                 <outlet property="projectsListItem" destination="CFA-A8-qSV" id="vug-6X-eD0"/>
                 <outlet property="statusMenu" destination="maa-EJ-mQB" id="UEg-J6-fWh"/>
             </connections>
@@ -29,6 +31,12 @@
                 <menuItem isSeparatorItem="YES" id="xDN-nW-FgJ"/>
                 <menuItem id="CFA-A8-qSV" userLabel="Projects">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" hidden="YES" id="ucW-BW-oE9" userLabel="new-project-separator"/>
+                <menuItem title="New project" hidden="YES" keyEquivalent="n" id="1X0-2L-IiF" userLabel="new-project-item">
+                    <connections>
+                        <action selector="newProjectClickedWithSender:" target="SgW-QN-cNc" id="eB8-3X-ZFT"/>
+                    </connections>
                 </menuItem>
                 <menuItem isSeparatorItem="YES" id="6aL-OR-ZNK"/>
                 <menuItem title="Refresh" keyEquivalent="r" id="8JM-Az-MoV">

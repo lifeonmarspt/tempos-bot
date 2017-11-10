@@ -32,7 +32,29 @@ class Tempos {
   }
 
   static func createProject(path: String) -> Bool {
-    return false
+    let regex = try! NSRegularExpression(
+      pattern: "^[-\\w]+\\/[-\\w]+$",
+      options: .caseInsensitive
+    )
+    
+    if regex.numberOfMatches(in: path, range: NSMakeRange(0, path.utf8.count)) != 1 {
+      return false
+    }
+    
+    let fileManager = FileManager.default
+    let defaultRepo = UserDefaults.standard.string(forKey: "repo")!
+    
+    do {
+      try fileManager.createDirectory(
+        atPath: "\(defaultRepo)/\(path)",
+        withIntermediateDirectories: true,
+        attributes: nil
+      )
+      return true
+    }
+    catch {
+      return false
+    }
   }
 
   static func isValidCommand(command: String) -> Bool {
