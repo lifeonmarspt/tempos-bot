@@ -15,6 +15,7 @@
 		AE09CB581FA38AA700D3BFB1 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */; };
 		AE1591EC1FACE11A0067C09D /* Tempos.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1591EB1FACE11A0067C09D /* Tempos.swift */; };
 		AE23C5BF1FAD41A700EF827F /* ProjectListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23C5BD1FAD41A700EF827F /* ProjectListController.swift */; };
+		AE2D8AA5201244BC0032AF98 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2D8AA4201244BC0032AF98 /* RepeatingTimer.swift */; };
 		AE656DB21FAF71FE00750651 /* ColoredButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE656DB11FAF71FE00750651 /* ColoredButton.swift */; };
 		AE74B2891FACC1830055F2DE /* Git.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE74B2881FACC1830055F2DE /* Git.swift */; };
 		AE8539631FAC7F680037A857 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8539621FAC7F680037A857 /* TextField.swift */; };
@@ -52,6 +53,7 @@
 		AE09CB561FA38AA700D3BFB1 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		AE1591EB1FACE11A0067C09D /* Tempos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tempos.swift; sourceTree = "<group>"; };
 		AE23C5BD1FAD41A700EF827F /* ProjectListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectListController.swift; sourceTree = "<group>"; };
+		AE2D8AA4201244BC0032AF98 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 		AE656DB11FAF71FE00750651 /* ColoredButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredButton.swift; sourceTree = "<group>"; };
 		AE74B2881FACC1830055F2DE /* Git.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git.swift; sourceTree = "<group>"; };
 		AE8539621FAC7F680037A857 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 			children = (
 				AE74B2881FACC1830055F2DE /* Git.swift */,
 				AE1591EB1FACE11A0067C09D /* Tempos.swift */,
+				AE2D8AA4201244BC0032AF98 /* RepeatingTimer.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				AE74B2891FACC1830055F2DE /* Git.swift in Sources */,
 				AE23C5BF1FAD41A700EF827F /* ProjectListController.swift in Sources */,
 				AE1591EC1FACE11A0067C09D /* Tempos.swift in Sources */,
+				AE2D8AA5201244BC0032AF98 /* RepeatingTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

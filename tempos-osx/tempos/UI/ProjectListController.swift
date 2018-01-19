@@ -62,10 +62,13 @@ class ProjectListController: NSViewController {
 
   func refresh() {
     projects = Tempos.projects()
-    calculateAndSetColumnWidths()
-    view.frame = NSRect(x: 0, y: 0, width: tableWidth(), height: ((ROW_HEIGHT + 2) * projects!.count))
-    tableView!.reloadData()
-    mainMenu?.setActive(Tempos.globalStatus() == "start")
+    
+    DispatchQueue.main.async {
+      self.calculateAndSetColumnWidths()
+      self.view.frame = NSRect(x: 0, y: 0, width: self.tableWidth(), height: ((self.ROW_HEIGHT + 2) * self.projects!.count))
+      self.tableView!.reloadData()
+      self.mainMenu?.setActive(Tempos.globalStatus() == "start")
+    }
   }
 
   @objc func handleStart(sender: NSButton) {

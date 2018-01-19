@@ -12,6 +12,7 @@ class MainMenuController: NSObject {
   private var statusItem: NSStatusItem!
   private var preferencesWindow: PreferencesWindowController!
   private var projectsListController: ProjectListController!
+  private var backgroundTimer: RepeatingTimer!
   
   private var isActive: Bool = false
 
@@ -82,6 +83,7 @@ class MainMenuController: NSObject {
     projectsListController.mainMenu = self
 
     setupMenuItems()
+    setupUpdateScheduler()
 
     setActive(Tempos.globalStatus() == "start")
   }
@@ -90,6 +92,7 @@ class MainMenuController: NSObject {
     self.isActive = active
     let icon = active ? "menubar-active" : "menubar-inactive"
     statusItem.image = NSImage(named: NSImage.Name(icon))
+    statusItem.image?.isTemplate = !active
   }
 
   private func setupMenuItems() {
@@ -113,6 +116,14 @@ class MainMenuController: NSObject {
     newProjectSeparator.isHidden = false
     newProjectItem.isHidden = false
   }
+  
+  private func setupUpdateScheduler() {
+    backgroundTimer = RepeatingTimer()
+    backgroundTimer.eventHandler = {
+      self.projectsListController.refresh()
+    }
+    backgroundTimer.resume()
+  }
 }
 
 extension MainMenuController: PreferencesWindowDelegate {
@@ -123,6 +134,6 @@ extension MainMenuController: PreferencesWindowDelegate {
 
 extension MainMenuController: NSMenuDelegate {
   func menuWillOpen(_ menu: NSMenu) {
-    projectsListController.refresh()
+    // projectsListController.refresh()
   }
 }
