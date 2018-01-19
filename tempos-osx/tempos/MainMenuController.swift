@@ -92,6 +92,7 @@ class MainMenuController: NSObject {
     self.isActive = active
     let icon = active ? "menubar-active" : "menubar-inactive"
     statusItem.image = NSImage(named: NSImage.Name(icon))
+    statusItem.image?.isTemplate = !active
   }
 
   private func setupMenuItems() {
