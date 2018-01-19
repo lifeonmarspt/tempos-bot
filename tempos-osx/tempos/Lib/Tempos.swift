@@ -88,7 +88,6 @@ class Tempos {
       return status!.contains("stop") ? "stop" : "start"
     }
     catch {
-      FileManager.default.createFile(atPath: path, contents: nil)
       return "stop"
     }
   }
@@ -172,6 +171,10 @@ class Tempos {
   }
 
   private static func writeCommand(_ project: String, command: String) -> String {
+    if (!FileManager.default.fileExists(atPath: projectPath(project))) {
+        FileManager.default.createFile(atPath: projectPath(project), contents: nil)
+    }
+    
     let file = FileHandle(forWritingAtPath: projectPath(project))
     let log = "\(Int(NSDate().timeIntervalSince1970)) \(timezone()) \(command)\n"
 
